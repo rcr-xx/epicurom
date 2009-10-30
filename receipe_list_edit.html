@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div id="edit_receipe_list">
+        <div id="titre1">
+            <h1>Admin - Liste des recettes</h1>
+        </div>
+        <div id='middle_column2'>
+            <div id="button_add_receipe"><a href="/receipe?action=receipe_add"><img src="/picture/add.png"><b>Ajouter Recette</b></a></div>
+            <table id="edit_table">
+                <tr><th>Recette</th><th></th></tr>
+                <form method='post' action='/receipe'>
+                    <input type="hidden" id="key" name="key" value="">
+                    <input type="hidden" id="action" name='action' value="">
+                    {% for receipe in receipes %}
+                        <tr>
+                            <td id="recette">{{ receipe.name }}</td>
+                            <td id="buttons">
+                                <input type="image" title="Supprimer cette recette" src="/picture/cross.png"
+                                       onclick="$('#key').val('{{ receipe.key }}'); $('#action').val('receipe_delete');
+                                       return confirm('Confirmez-vous la suppression?');" />
+                                <a href="/receipe?action=receipe_edit&key={{ receipe.key }}"><img src="/picture/edit.png"></a>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </form>
+            </table
+            <div id="button_add_receipe"><a href="/receipe?action=receipe_add"><img src="/picture/add.png"><b>Ajouter Recette</b></a></div>
+        </div>
+    </div>
+{% endblock %}

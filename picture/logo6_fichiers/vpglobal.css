@@ -1,0 +1,1195 @@
+/*-----------------------------------
+ *  vpglobal.css
+ *-----------------------------------*/
+/*============================================================================
+ * Global Style Sheet
+ * Do not modify under penalty of death.
+ *============================================================================*/
+ 
+/*----------------------------------------------------------------------------
+ * Browser-equalizing styles
+ *----------------------------------------------------------------------------*/
+
+/*
+ * IE uses border-box all the time; others use content-box by default. Setting
+ * these ensures that all measurements will be treated the same across all
+ * browsers.
+ */
+*
+{
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*
+ * Erase margins and padding to start with a clean slate.
+ * Establish a containing block for all descendants of body.
+ */
+body
+{
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+}
+
+/*----------------------------------------------------------------------------
+ * General Layout Styles
+ *----------------------------------------------------------------------------*/
+
+/*
+ * Define default background color and font.
+ */
+body
+{
+	font-family: Arial,Helvetica,Sans-Serif;
+	background-color: #ffffff;
+}
+body.center-justify
+{
+	text-align: center; /* IE centering work-around */
+	background-image: url(/vp/images/nns/common/background/page_background_tile.jpg); /* blue gradient */
+	background-repeat: repeat-x;
+	background-color: #AAC5F5; /* background for below gradient */
+}
+
+
+/*
+ * Define default font size.
+ */
+body, td, th
+{
+	font-size: 11px;
+}
+
+/*
+ * General appearance for links.
+ */
+a
+{
+	color: #2E2F91;
+}
+a:link
+{
+	/* unvisited links */
+}
+a:visited
+{
+	/* visited links */
+}
+a:hover
+{
+	color: #000033; /* user hovers */
+}
+a:active
+{
+	/* active links */
+}
+
+/*
+ * Navigation style-links are not underlined until user hovers
+ */
+a.nav
+{
+	text-decoration: none;
+}
+a.nav:link
+{
+	/* unvisited links */
+}
+a.nav:visited
+{
+	/* visited links */
+}
+a.nav:hover
+{
+	text-decoration: underline; /* user hovers */
+}
+a.nav:active
+{
+	/* active links */
+}
+
+
+/*
+ * Images should have no border by default.
+ */
+img
+{
+	border-width: 0px;
+}
+
+/*----------------------------------------------------------------------------
+ * Floating banner ad
+ *----------------------------------------------------------------------------*/
+ 
+div.divFloatingBanner
+{
+	float: right;
+	width: 150px;
+	margin-top: 91px;
+	padding-left: 1em;
+}
+
+/* TEST THIS AS IT MAY NEED TO BE CHANGED */
+#divPageOuterIncludingBanner
+{
+ width: 907px;
+}
+
+/*
+ * Container for all parts of the page. Provides the background color
+ * for the bottom portion of the page below the fade image.
+ * Page template style sheets may override the width if necessary.
+ */
+#divPageOuter
+{
+	position: relative;
+	width: 754px;
+	height: auto;
+	padding: 0px;
+	border: 0px;
+	margin: 0px;
+	background-image: url(/vp/images/nns/common/background/page_background_tile.jpg); /* blue gradient */
+	background-repeat: repeat-x;
+	background-color: #AAC5F5;   /* background for below gradient */
+}
+body.center-justify #divPageOuter
+{
+	text-align: left; /* Undo IE centering work-around */
+	background-image: none;
+	background-color: Transparent;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*
+ * Container for all content of the page. Provides the margins.
+ * Page template style sheets may override the positioning if necessary.
+ */
+#divPageInner
+{
+	position: relative;
+	width: 722px;
+	height: auto;
+	top: 0px;
+	bottom: 0px;
+	left: 16px;
+	padding: 0px;
+	border: 0px;
+	margin: 0px;
+	background-color: Transparent;
+}
+
+/*
+ * Container for marquee and left Nav
+ */
+#tdMarqueeAndNav 
+{
+	position: relative;
+	width: 156px;
+	vertical-align: top;
+	height: 100%; /* MANDATORY for divH1AndPageContent to be full height */
+	padding-top: 10px;
+}
+
+#tdMarqueeAndNavDisabled
+{
+	position: relative;
+	width: 78px; /* half as wide as normal */
+	vertical-align: top;
+	height: 100%; /* MANDATORY for divH1AndPageContent to be full height */
+	padding-top: 10px;
+}
+/*
+ * Container for marquee and left Nav
+ */
+body.center-justify #tdMarqueeAndNav 
+{
+	background-color: #EBF1FD;
+}
+
+body.center-justify #tdMarqueeAndNavDisabled 
+{
+	background-color: transparent;  /* let background gradient show */
+}
+
+body.fixed-960 #tdH1AndPageContent
+{
+	position: relative;
+	width: 804px;
+	vertical-align: top;
+	padding-top: 10px;
+}
+
+/*
+ * Table cell that appears only when Nav is displayed.
+ */
+#tdH1AndPageContent 
+{
+	position: relative;
+	width: 566px;
+	vertical-align: top;
+	padding-top: 10px;
+}
+
+#divH1AndPageContent
+{
+	background-image: url(/vp/images/nns/common/background/page_shadow_tile.gif);
+	background-repeat: repeat-y;
+	background-position:right top;
+	background-color: White;
+	height: 100%;
+}
+
+/* 
+ * Welcome message for customer.
+ */
+#divWelcomeMessage
+{
+}
+
+
+/*
+ * Container for the body of the page below the title and above the footers. 
+ * Provides the background color.
+ * Page template style sheets may override the background color if necessary.
+ */
+#divPageContentOuter
+{
+	position: relative;
+	width: 722px;
+	height: auto;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	padding: 0px;
+	border: 0px;
+	margin: 0px;
+	/* The dark blue border on the right side. */
+	background-image: url(/vp/images/nns/common/background/page_shadow_tile.gif);
+	background-repeat: repeat-y;
+	background-position: right top;
+	background-color: White;
+	float: left;
+}
+
+/*
+ * Styles for table that contains Nav, H1 and Page Content
+ */
+#tblPageContentWithNav
+{
+    height: 100%;
+}
+
+/*
+ * Page content outer container properties that apply only when Nav is displayed.
+ */
+body.fixed-960 #tblPageContentWithNav #divPageContentOuter
+{
+	width: 100%;
+}
+ 
+#tblPageContentWithNav #divPageContentOuter
+{
+	width: 566px;
+}
+
+body.center-justify #tdNav
+{
+	background-color: #EBF1FD;
+}
+
+/*
+ * Container for the body of the page below the title and above the footers. 
+ * Provides the margins.
+ * Page template style sheets may override the width/margins if necessary.
+ */
+#divPageContentInner
+{
+	position: relative;
+	width: 690px;
+	height: auto;
+	top: 0px;
+	bottom: 100px;
+	left: 16px;
+	padding: 0px;
+	border: 0px;
+	margin: 0px;
+}
+
+
+/*
+ * Page content inner container properties that apply only when Nav is displayed.
+ */
+body.fixed-960 #tblPageContentWithNav #divPageContentInner
+{
+	width: 789px;
+}
+ 
+#tblPageContentWithNav #divPageContentInner
+{
+	right: 0px;
+	width: 551px;
+}
+
+/*
+ * Heading styles
+ */
+
+h1
+{
+	font-size: 18px;
+}
+
+h2
+{
+	font-size: 14px;
+	font-weight: bold;
+}
+
+h3
+{
+	font-size: 12px;
+	font-weight: bold;
+}
+
+hr.primary
+{
+	color: #2E2F91;
+	height: 1px;
+	/* firefox doesn't do HR colors, so use borders */
+	border-width: 1px;
+	border-style: solid;
+	border-color: #2E2F91;
+}
+
+hr.secondary
+{
+	color: #588EED;
+	height: 1px;
+	/* firefox doesn't do HR colors, so use borders */
+	border-width: 1px;
+	border-style: solid;
+	border-color: #588EED;
+}
+
+/*----------------------------------------------------------------------------
+ * Section Title Styles
+ *----------------------------------------------------------------------------*/
+
+/*
+ * Headings use section-title to define style
+ */
+h1.section-title, h2.section-title, h3.section-title, h4.section-title
+{
+	margin: 0px;
+}
+
+/*
+ * Section title table.
+ * The width may need to be overridden in page-template-specific style sheets.
+ */
+table.section-title
+{
+	width: 100%;
+	background-color: #3E4DB1;
+}
+
+td.section-title-middle
+{
+	color: White;
+	font-size: 18px;
+	font-weight: normal;
+	height: 24px;
+}
+
+td.section-title-left
+{
+	vertical-align: top;
+	width: 13px;
+	height: 24px;
+	font-size: 1px;
+	line-height: 1px;
+}
+td.section-title-left div
+{
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-image: url(/ig/circle.caspx?r=4&fc=3E4DB1&bc=FFFFFF);
+	width: 4px;
+	height: 4px;
+}
+
+td.section-title-right
+{
+	vertical-align: top;
+	width: 4px;
+	height: 24px;
+	font-size: 1px;
+	line-height: 1px;
+}
+td.section-title-right div
+{
+	background-position: right top;
+	background-repeat: no-repeat;
+	background-image: url( /ig/circle.caspx?r=4&fc=3E4DB1&bc=FFFFFF);
+	width: 4px;
+	height: 4px;
+}
+
+/*
+ * Subsection Header
+ */
+
+td.subsection-header-middle
+{
+	background-color: #3E4DB1;
+	color: White;
+	font-size: 13px;
+	height: 24px;
+	font-weight:bold;
+	font-family:Arial;
+}
+
+/*
+ * Left end of section title
+ */
+td.subsection-header-left
+{
+	background-image: url(/vp/images/nns/common/background/single_product_page/left_slice.gif);
+	width: 8px;
+	height: 24px;
+	font-size: 1px;
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-color: #3E4DB1;
+}
+
+/*
+ * Right end of section title
+ */
+td.subsection-header-right
+{
+	background-image: url(/vp/images/nns/common/background/single_product_page/right_slice.gif);
+	width: 4px;
+	height: 24px;
+	font-size: 1px;
+	background-position: right top;
+	background-repeat: no-repeat;
+	background-color: #3E4DB1;
+}
+
+
+/*----------------------------------------------------------------------------
+ * Pricing Styles
+ *----------------------------------------------------------------------------*/
+
+/*
+ * Formerly "crossout". The price we aren't charging the customers
+ * but makes them feel good to see how much they're saving.
+ */
+.comparative-list-price, .strikeout-price
+{
+	text-decoration: line-through;
+}
+
+/*
+ * The list price and the customer actually has to pay it (rare)
+ */
+.list-price
+{
+	/* intentionally empty for now */
+}
+
+/*
+ * The actual price the customer is paying in relation to the comparative price.
+ */
+.discount-price
+{
+	color: #DE0000;
+}
+
+.scrolling-container-top .discount-price
+{
+	padding-left:3px;
+}
+
+/*
+ * Temporary class used for automated testing of the pricing rearchitecture
+ */
+.undefined-price 
+{
+	/* Nothing will ever be defined here as this is going away soon */
+}
+ 
+/*----------------------------------------------------------------------------
+ * General Purpose Font Styles
+ *----------------------------------------------------------------------------*/
+
+.form-label
+{
+	font-weight: bold;
+	font-size: 11px;
+}
+
+/*
+ * Used to call attention to a particular portion of text.
+ */
+strong a
+{
+	text-decoration: none;
+}
+strong a:hover
+{
+	text-decoration: underline;
+}
+strong a:active
+{
+}
+
+div.top-label
+{
+	font-weight: bold;
+	font-size: 11px;
+	padding-top: 5px;
+}
+
+.error
+{
+	font-weight: bold;
+	font-size: 12px;
+	color: #DE0000;
+}
+
+div.error
+{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.alert
+{
+	color: #DE0000;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.smallalert
+{
+	color: #DE0000;
+	font-weight: regular;
+	font-size: 11px;
+	font-style: italic;
+}
+
+div.alert
+{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+/* Deprecated: please use alert class */
+.warning
+{
+	color: #DE0000;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+/* Deprecated: please use alert class */
+div.warning
+{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.urgent-instruction
+{
+	color: #DE0000;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+div.urgent-instruction
+{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.exhortation-merchandising
+{
+	color: #FF6600;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+div.exhortation-merchandising
+{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+div.holidaytxt-with-shipping-delay
+{
+	width: 275px;
+}
+
+.important-disclaimer
+{
+	color: #FF6600;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+div.important-disclaimer
+{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.title-header
+{
+	color:#00539F;
+	font-size:18px;
+}
+
+.footnote
+{
+	/* Intentionally blank, defaults to 11px black */
+}
+
+div.footnote
+{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+/*
+ * Cross-browser way of getting pointer/hand cursor.
+ */
+.cursor-pointer
+{
+	cursor: pointer;
+	cursor: hand;
+}
+
+/*
+ * Styles for clickable buttons
+ */
+
+.enabled-button
+{
+	cursor: pointer;
+	cursor: hand;
+}
+
+.disabled-button
+{
+	display: none; 
+}
+
+/*
+ * Style for div used to mask the page when a pop up is floated over it.
+ */
+#divPageMask 
+{
+	z-index: 100;
+    position: absolute; 
+    left: 0px;
+    background-color: white; 
+    width: 100%;
+    height: 100%;
+    opacity: 0.70; 
+    -moz-opacity: 0.70; 
+    filter: alpha(opacity=70);
+    visibility: hidden;
+}
+
+/*
+ * Footnotes Styles
+ */
+
+#divPageContentFootnotes 
+{
+    font-size: 14px;
+    text-align: center;
+}
+
+#divPageContentFootnotes div.footnote
+{
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+
+#divPageContentFootnotes div.footnote span.footnote-symbol
+{
+    padding-right: 6px;
+}
+
+
+.swatch-box
+{
+	width: 15px;
+	height: 15px;	
+	border-width: 1px;
+	border-color: black;	
+	border-style: solid;
+}
+
+/*============================================================================
+ * OVERRIDES FOR FIXED 1024 SITE WIDTH
+ *============================================================================*/
+
+
+body.fixed-1024 #divPageOuter
+{
+	width:1004px;
+}
+
+body.fixed-1024 #divPageInner
+{
+	width:1000px;
+}
+
+body.fixed-1024 #divPageContentOuter
+{
+	width:1000px;
+}
+
+body.fixed-1024 #divPageContentInner
+{
+	width:980px;
+}
+
+body.fixed-1024 #tblNavHeader
+{
+	width:1004px;
+}
+
+body.fixed-1024 #tdH1AndPageContent
+{
+	width:844px;
+}
+
+body.fixed-1024 #tblPageContentWithNav #divPageContentOuter
+{
+	width:844px;
+}
+
+body.fixed-1024 #tblPageContentWithNav #divPageContentInner
+{
+	width:828px;
+}
+
+/*============================================================================
+ * OVERRIDES FOR FIXED 960/1024 SITE WIDTH
+ *============================================================================*/
+
+
+body.fixed-960 #divPageOuter
+{
+	width:960px;/**/
+}
+
+body.fixed-960 #divPageInner
+{
+	width:960px;/**/
+}
+
+body.fixed-960 #divPageContentOuter
+{
+	width:960px;
+}
+
+body.fixed-960 #divPageContentInner
+{
+	width:940px;
+}
+
+body.fixed-960 #tblNavHeader
+{
+	width:960px;
+}
+
+/*============================================================================
+ * OVERRIDES FOR FLUID SITE WIDTH
+ *============================================================================*/
+
+/*
+ * Container for all parts of the page. Provides the background color
+ * for the bottom portion of the page below the fade image.
+ * Page template style sheets may override the width if necessary.
+ */
+body.fluid-width
+{
+	background-image:none;
+	background-color:White;
+	min-width:777px;
+	/*IE6 'min-width' hack*/
+	/*width:expression(document.body.clientWidth < 777 ? '777px': 'auto' );*/
+}
+
+body.fluid-width  #divPageOuter
+{
+	width: 100%;
+	min-width:773px;
+	/*IE6 'min-width' hack*/
+/*	width:expression(document.body.clientWidth < 770 ? '770px': 'auto' );*/
+}
+
+
+/*
+ * Container for all content of the page. Provides the margins.
+ * Page template style sheets may override the positioning if necessary.
+ */
+body.fluid-width #divPageInner
+{
+/*	min-width: 800px;*/
+	width:99%;
+	right:8px;
+	left:5px;
+}
+
+/*
+ * Container for the body of the page below the title and above the footers. 
+ * Provides the background color.
+ * Page template style sheets may override the background color if necessary.
+ */
+body.fluid-width #divPageContentOuter
+{
+	width: 100%;
+	/* The dark blue border on the right side. */
+	padding-left: 0px;
+	background-image:none;
+}
+/*
+ * Page content outer container properties that apply only when Nav is displayed.
+ */
+body.fluid-width #tblPageContentWithNav #divPageContentOuter
+{
+	width: 100%;
+}
+
+/*
+ * Container for the body of the page below the title and above the footers. 
+ * Provides the margins.
+ * Page template style sheets may override the width/margins if necessary.
+ */
+body.fluid-width #divPageContentInner
+{
+	left:0px;
+	width: 100%;
+	padding-left:0px;
+	padding-right:0px;
+}
+
+
+/*
+ * Page content inner container properties that apply only when Nav is displayed.
+ */
+body.fluid-width #tblPageContentWithNav #divPageContentInner
+{
+	width: 100%;
+}
+
+/*
+* 
+* BRAND 2009 ADDITIONS
+*
+*/
+
+body.fixed-960 td#tdH1AndPageContent,
+td#tdH1AndPageContent
+{
+	padding-top: 0px;
+}
+
+#tblPageContentWithNav #divPageContentOuter 
+{
+	width:	100%;
+}
+
+body.fixed-960 td#tdH1AndPageContent,
+body.fixed-960 #tblPageContentWithNav #divPageContentInner
+{
+	width:782px;
+}
+
+td#tdMarqueeAndNav
+{
+	padding-top: 0;
+	vertical-align:top;
+}
+
+body.fixed-960 #tdMarqueeAndNav
+{
+	width:175px;
+}
+
+
+#tblPageContentWithNav #divPageContentInner,
+body.fixed-1024 #tblPageContentWithNav #divPageContentInner
+{
+	width:100%;
+}
+
+body.fixed-960 div#divPageContentInner,
+div#divPageContentInner
+{
+	left:0px;
+	width:auto;
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
+body.fluid-width #divPageContentInner {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+body.fixed-960 #tdH1AndPageContent div#divPageContentInner,
+#tdH1AndPageContent div#divPageContentInner
+{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.section-title
+{
+	width: 100%;
+}
+#divH1 .section-title
+{
+	margin-top:0px;
+}
+
+#divBackToMyWebsites
+{
+	margin-left:10px;
+}
+
+.quote-text
+{
+	padding-bottom: 15px;
+	text-align:left;
+}
+
+.quote-details
+{
+	padding-bottom: 15px;
+	text-align:left;
+}
+
+.InnerContentBelowTitle 
+{
+	padding: 0 0 0 13px;
+}
+
+.merchandise-new
+{
+	font-family: Arial;
+	font-weight: bold;
+	color: #55A51C;
+}
+
+/*-----------------------------------
+ *  vpglobal.brand09.css
+ *-----------------------------------*/
+/*@import url(/vp/css/vpglobal.css?siteversion=201);*/
+
+h1
+{
+	font-weight:normal;
+}
+
+
+#divProductDescription ul li { 
+padding-left: 14px;	
+background-image: url(/vp/images/b09/common/bullet/bullet1.gif); 
+background-repeat: no-repeat;
+background-position: 0 .5em;
+} 
+
+#divProductDescription ul
+{
+list-style: none;
+}
+
+
+a
+{
+	color: #00539F;
+}
+
+.action-label
+{
+	color: #00539F;
+	font-size: 12px;
+	font-weight:bold;
+}
+
+.discount-price
+{
+	color: #D1005D;
+	font-size:12px;
+	font-weight:bold;
+}
+
+.error
+{
+	color: #D1005D;
+}
+
+.alert
+{
+	color: #D1005D;
+}
+
+/* Deprecated: please use alert class */
+.warning
+{
+	color: #D1005D;
+}
+
+.urgent-instruction
+{
+	color: #D1005D;
+}
+
+.exhortation-merchandising
+{
+	color: #FF7900;
+}
+
+.important-disclaimer
+{
+	color: #FF7900;
+}
+
+td.section-title-middle
+{
+	color:#2C99DA;
+}
+
+#divH1AndPageContent
+{
+	background-image:none;
+}
+
+body.fixed-960 td#tdH1AndPageContent,
+td#tdH1AndPageContent
+{
+	background-color:White;
+}
+
+#divPageInner #tblPageContentWithNav,
+#divPageInner #divPageContentOuter #divPageContentInner,
+#divPageInner #divWelcomeMessage,
+#divPageInner #divH1
+{
+	border-right: solid 1px #BEC3C5;
+	border-left: solid 1px #BEC3C5;
+}
+
+#divPageInner #tblPageContentWithNav #divPageContentOuter #divPageContentInner,
+#divPageInner #tblPageContentWithNav #divWelcomeMessage,
+#divPageInner #tblPageContentWithNav #divH1,
+body.fluid-width #divPageInner #divPageContentOuter #divPageContentInner,
+body.fluid-width #divPageInner #divWelcomeMessage,
+body.fluid-width #divPageInner #divH1
+{
+	border-left: 0px;
+	border-right: 0px;
+}
+
+td#tdMarqueeAndNav
+{
+	border-right: solid 1px #BEC3C5;
+}
+
+body.center-justify #tdMarqueeAndNav
+{
+	background-color:#F2F9FE;
+}
+
+#divPageContentOuter
+{
+	background-image:none;
+}
+
+.section-title-left,
+.section-title-right,
+.section-title-middle-right,
+.section-title-middle
+{
+	background-image: url(/vp/images/b09/common/page-bg/h1/h1_header_tile.gif);
+	background-repeat:repeat-x;
+}
+
+.section-title-middle-right table#lblSectionTitleHelp div
+{
+	color:#2C99DA;
+}
+
+td.section-title-left div,
+td.section-title-right div
+{
+	background-image: none;
+}
+
+
+.quote-details
+{
+	font-size: 12px;
+	color:#FF7900;
+}
+
+.quote-person
+{
+	font-weight:bold;
+}
+
+.expand-quote
+{
+	display:inline-block;
+	background-image: url(/vp/images/b09/common/bullet/arrow_bullet_01.gif);
+	padding-right: 10px;
+	background-position:right center;
+	background-repeat:no-repeat;
+}
+
+.quoteClose
+{
+	float:right;
+}
+
+.quoteClose a
+{
+	display:block;
+	float:left;
+	padding-right: 5px;
+	padding-top: 3px;
+}
+
+ul.branded-bullets
+{
+	list-style-type:none;
+	padding: 0px;
+	margin: 0px;
+}
+ul.branded-bullets li
+{
+	background-image:url(/vp/images/b09/common/bullet/bullet1.gif);
+	background-repeat:no-repeat;
+	padding-left: 12px;
+	background-position:0 4px;
+}
+
+/** Tab header text for tabbed containers **/
+.tabHeaderText
+{
+	font-weight: bold;
+}
+

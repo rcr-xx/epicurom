@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div id="titre1">
+    <h1>Editer recette</h1>
+</div>
+
+<div id="add_receipe">
+    <form action="/receipe" method="post">
+        <input type="hidden" name="action" value="receipe_edit" />
+        <input type="hidden" name="key" value="{{ receipe.key }}" />
+        <div>
+            <label>Nom de la recette : </label>
+            <input type="text" name="name" value="{{ receipe.name }}">
+        </div>
+        <div>
+            <label>Quantite</label>
+            <input type="text" name="quantity" value="{{ receipe.quantity }}">
+        </div>
+        <div>
+            <label>Note</label>
+            <select name="mark">
+            {% for item in mark %}
+                {% if item.selected %}
+                    <option  selected="selected">{{ item.level }}</option>
+                {% else %}
+                    <option>{{ item.level }}</option>
+                {% endif %}
+            {% endfor %}
+            </select>
+        </div>
+        <div>
+            <label>Difficulté</label>
+            <select name="toughness">
+            {% for item in toughness %}
+                {% if item.selected %}
+                    <option  selected="selected">{{ item.level }}</option>
+                {% else %}
+                    <option>{{ item.level }}</option>
+                {% endif %}
+            {% endfor %}
+            </select>
+        </div>
+        <div>
+            <label>Prix</label>
+            <select name="price">
+            {% for item in price %}
+                {% if item.selected %}
+                    <option  selected="selected">{{ item.level }}</option>
+                {% else %}
+                    <option>{{ item.level }}</option>
+                {% endif %}
+            {% endfor %}
+            </select>
+        </div>
+        <div>
+            <label>Categorie</label>
+            <select name="category" STYLE="width: 150px">
+            {% for categorie in categories %}
+                <option value="{{ categorie.value }}" selected="{{ categorie.selected }}">{{ categorie.title }}</option>
+            {% endfor %}
+            </select>
+        </div>
+        <div><label>Conseil</label><textarea name="advice" cols=50 rows=2>{{ receipe.advice }}</textarea></div>
+        <div><label>Ingredients</label><textarea name="ingredient" cols=50 rows=8>{{ receipe.ingredient }}</textarea></div>
+        <div><label>Preparation</label><textarea name="preparation" cols=50 rows=8>{{ receipe.preparation }}</textarea></div>
+        <div><input type="submit" value="Valider"></div>
+    </form>
+    <br><a href='/receipe?action=receipe_list_edit'>Liste des recettes</a>
+</div>
+{% endblock %}

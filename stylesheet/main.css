@@ -1,0 +1,425 @@
+/* ========= GENERAL =========== */
+body {
+    background: transparent url(/picture/bandeau3.png) repeat-x scroll 0 0;
+    background-color: #402E12;
+    height: 850px;
+    }
+
+* {
+    margin: 0;
+    padding: 0;
+    color: #E1DACC;
+    font-family: helvetica;
+    font-size:13px;
+    }
+
+ul {
+    list-style-image:none;
+    list-style-position:outside;
+    list-style-type:none;
+    }
+
+h1 {
+    color:#FFC859;
+    font-size:19px;
+    font-style:italic;
+    }
+
+h2 {
+    color:#8AB110;
+    font-size:15px;
+    font-style:italic;
+    font-weight:bold;
+    text-align:left;
+    margin-top:5px;
+    }
+
+img, input[type="image"] {
+    border: none;
+    }
+
+#centring {
+    margin: auto;
+    width: 974px;
+    height: 100%;
+    }
+/* ======== GENERAL END ========== */
+
+/* ========== HEADER ============= */
+#bandeau {
+    height:132px;
+    background-image: url(/picture/logo.png);
+    background-repeat: no-repeat;
+    }
+/* ======== HEADER END ============ */
+
+/* ================== LEFT COLUMN ===================== */
+#left_nav {
+    background-color: #3B2911;
+    padding-top: 35px;
+    width: 170px;
+    float: left;
+    height: 100%;
+    }
+
+#advice {
+    margin-top: 25px;
+    }
+
+#advice h2 {
+    margin-bottom: 10px;
+    }
+/* ================== LEFT COLUMN END ===================== */
+
+/* ============= MIDDLE COLUMN ======================== */
+#middle_column {
+    margin-top:35px;
+    padding-bottom:30px;
+    padding-left:12px;
+    width:576px;
+    float: left;
+    }
+
+#middle_column2 {
+    width: 540px;
+    margin: auto;
+    margin-top: 15;
+    }
+
+#middle_column2 li{
+    margin-top: 2px;
+    }
+
+#msg {
+    width:300px;
+    padding:5px;
+    margin:auto;
+    -moz-border-radius: 15px;
+    text-align:center;
+    margin-bottom:30px;
+    }
+
+.error_msg {
+    border:3px solid #E75252;
+    background-color:#FFE7E7;
+    color:#E75252;
+    }
+
+.standard_msg {
+    background-color:#F1FFE5;
+    color:#008E01;
+    border:3px solid #008E01;
+    }
+
+#titre1 {
+    border-bottom:1px dotted;
+    margin-bottom: 20px;
+}
+
+#receipe_feature{
+    width:140px;
+    padding: 10px;
+    float: right;
+    border:3px solid #80A30E;
+    -moz-border-radius: 15px;
+    margin-right: 25px;
+    line-height: 21px;
+    }
+
+#ingredient {
+    margin-top: 25px;
+    }
+
+#ingredient h2{
+    margin-bottom: 10px;
+    }
+
+#subreceipe {
+    margin-top: 8px;
+    }
+
+#ingredient ul {
+    list-style-position: inside;
+    margin-top: 3px;
+    }
+
+#preparation {
+    margin-top: 30px;
+    }
+
+#preparation li {
+    margin-top: 10px;
+    list-style : decimal inside;
+    }
+
+#edit_receipe_list a {
+    text-decoration:none;
+}
+
+#edit_receipe_list li {
+    margin-top: 10px;
+    }
+
+#edit_receipe_list img {
+    vertical-align: bottom;
+    margin-top: 10px;
+    margin-right: 5px;
+    }
+
+#edit_table {
+    background-color: #E6E6E6;
+    width: 100%;
+    border: 1px solid #87AD10;
+    color: black;
+    border-collapse: collapse;
+    }
+
+#edit_table th {
+    color: #402E12;
+    height: 25px;
+    background-color: #D9D5CF;
+    font-size: 13px;
+    }
+
+#edit_table td {
+    border: 1px solid #87AD10;
+    color: #402E12;
+    font-weight: bold;
+    }
+
+#edit_table #buttons {
+    width: 60px;
+    text-align: center;
+    }
+
+#edit_table #recette {
+    padding-left: 20px;
+    align: center;
+    }
+
+#edit_table input[type="image"] {
+    vertical-align:middle;
+    }
+
+#edit_table img {
+    position: relative;
+    vertical-align:middle;
+    top:-5px;
+    }
+
+#add_receipe label {
+    width: 150px;
+    display:block;
+    float:left;
+    }
+
+#add_receipe div {
+    padding-top: 10px;
+    }
+
+#add_receipe input, textarea {
+    color: #402E12;
+    border: 2px solid #8AB110;
+    }
+
+#add_receipe a {
+    color: #8AB110;
+    }
+
+#add_receipe select {
+    font-size: 13px;
+    color: #402E12;
+    width: 45px;
+}
+
+#add_receipe option {
+    color: #402E12;
+    }
+
+a image {
+background-color: transparent;
+	text-decoration:none;
+	border:0px;
+}
+
+#edit_table tr {
+    background:#FFFFFF none repeat scroll 0 0;
+    height:20px;
+    }
+
+#button_add_receipe {
+    margin-bottom: 15px;
+    margin-top: 10px;
+    text-align: right;
+    }
+
+.receipe_link_list {
+    text-decoration: None;
+    }
+
+#receipe_list_view {
+    color: #E1DA1C;
+    font-weight: bold;
+    margin-left: 20px;
+    }
+
+#receipe_list_view ul{
+    list-style-image: url("/picture/chef.png") 
+    }
+    
+#receipe_list_view a:hover {
+    color: #FFC859;
+    }
+
+/* ================== MIDDLE COLUMN END =================== */
+
+/* ================== RIGHT COLUMN ===================== */
+#right_column {
+    background-color: #3B2911;
+    padding-top: 35px;
+    width: 190px;
+    height: 100%;
+    float: left;
+    }
+
+#separation_line {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px dotted #A6D513;
+    }
+
+#right_column input[type="text"] {
+    color: #77643D;
+    margin-top: 5px;
+    border: 2px solid #8AB110;
+    font-size: 10px;
+    margin-right: 4px;
+    }
+
+#right_column input[type="image"] {
+    border: 0px;
+    vertical-align: bottom;
+    }
+
+#right_column img {
+    vertical-align: middle;
+    }
+
+#right_column fieldset{
+    margin-left: 8px;
+    margin-right: 8px;
+    padding: 6px;
+    }
+
+#green {
+    color: #87AD10;
+    }
+
+.orange {
+    color: #FFC859;
+    }
+    
+#right_column_logo {
+    background-image: url(/picture/macaron.jpeg);
+    background-repeat: no-repeat;
+    width: 130px;
+    height: 107px;    
+    margin: auto;
+    padding-bottom: 25px;
+    }
+
+#search {
+    margin-top: 30px;
+    }
+
+#is_connected {
+    margin-bottom: 15px;
+    margin-left: 10px;
+    text-align:center;
+    }
+
+/* ================== RIGHT COLUMN END ===================== */
+
+/* ================== FOOTER ============================== */
+#foot {
+    background: transparent url(/picture/bottom.gif) repeat-x scroll 0 0;
+    clear: both;
+    color: #3B2911;
+    font-weight: bold;
+    height: 65px;
+    padding-top: 5px;
+    text-align: center;
+    width: 100%;
+    }
+/* ================== FOOTER END ====================== */
+
+/******************************/
+/* MON MENU DEROULANT */
+/******************************/
+
+#menu {
+width:100%;
+font-family:Tahoma, Helvetica, sans-serif;
+letter-spacing: 0.12em;
+display:block;
+margin:0 0 5px 0;
+padding:8px 0 0 0;
+height:18px;
+z-index:1000;
+}
+
+#menu div {
+float:left;
+padding:0 0 0 30px;
+}
+
+#menu div a {
+color:#402E12;
+font-weight:bold;
+text-decoration: none;
+}
+
+#menu div  a:hover {
+color: #000 ;
+}
+
+#menu div ul {
+position: absolute;
+margin: 5px 0 0 0;
+*margin:27px 0 0 -75px;
+background-color:#50514C;
+background-image:url(http://www.mfr-saint-flour.fr/wp-content/themes/1978-sovereign/img/fond-menu2.gif);
+background-position:bottom; background-repeat:repeat-x;
+line-height:25px;
+border-left:2px solid #8FB60C;
+border-right:2px solid #8FB60C;
+border-bottom:2px solid #8FB60C;
+*white-space: nowrap;
+*width:100%;
+}
+
+#menu ul, #menu li {
+margin: 0;
+padding: 0;
+list-style-type: none;
+list-style-position:outside;
+}
+
+#menu ul li {
+padding:0 5px;
+font-size:0.8em;
+}
+
+#menu ul li a {
+color:#c0c0c0;
+text-decoration: none;
+}
+
+#menu ul li a:hover {
+color: #f5f5f5 ;
+}
+
+#align_menu {
+width: 130px;
+}
+

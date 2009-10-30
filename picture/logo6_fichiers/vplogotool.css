@@ -1,0 +1,755 @@
+/*-----------------------------------
+ *  vplogotool.css
+ *-----------------------------------*/
+/* ----------------------------------------------------------------
+ * Main Stuff
+** ---------------------------------------------------------------- */
+#divPageContentOuter,
+#divPageContentInner 
+{
+    width: 958px ! important;
+    left: 0px;
+}
+
+#logo-body
+{
+    width: 100%;
+    border-bottom: 1px solid #BEC3C5;
+}
+
+hr.primary {
+    margin-bottom: 15px;
+    color: #BEC3C5;
+    border:1px solid #BEC3C5;
+}
+
+div.view-on-product-invisible{
+    display:none;
+}
+
+div.view-on-product-visible{
+    margin-top:5px;
+    display:block;
+    position:relative;
+    text-align: center;
+}
+
+#logoFrm
+{
+    margin-bottom: 0px;
+}
+
+p.top-next {
+	text-align: right;
+	padding-right: 4px;
+}
+.undefined-price{
+	color: #D1005D;
+}
+
+.indented-div{
+	margin-left: 10px;
+}
+
+.popUpTitle{
+	font-size:16px;
+	font-weight:bold;
+	margin-top: 0px;
+    margin-left: 15px;
+	margin-bottom: 10px;
+}
+
+li {
+	margin-left: 15px;
+}
+
+li.topPoints {
+	margin-left: 0px;
+}
+
+.large-text-pricing-point {
+	color:#000000;
+	font-size:14px;
+	font-weight:bold;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.large-text {
+	margin-left: -10px;
+	margin-top: 10px;
+}
+
+div.marquee-bullets ul {
+    list-style-type:none;
+}
+
+div.marquee-bullets ul li {
+    background-image:url(/vp/images/b09/common/bullet/bullet1.gif);
+    background-position:0 5px;
+    background-repeat:no-repeat;
+    padding:0 0 2px 8px;
+}
+
+/*end overwrites global*/
+
+#divPopUpOuterContainer
+{
+    padding: 0px;
+}
+
+#tblPopUpInnerContainer
+{
+    width: 300px;
+    margin: 15px;
+}
+
+span.toolsubtext {
+	font-size: 11px;
+	color: #2E2F91;
+}
+
+span.logoSavedText {
+	font-weight: bold;
+	font-style: italic;
+	font-size: 12px;
+	color: #D1005D;
+}
+
+p.centered {
+	text-align: center;
+	margin-top: 0;	
+}
+
+div.icon {
+    border-right:SOLID 1px #B4CCF6;
+    border-bottom:SOLID 1px #B4CCF6;
+	margin: 3px;
+}
+
+ul {
+	padding: 0px;
+	margin: 0px;
+}
+
+
+table.description-text {
+	text-align:center;
+	height: 45px;
+}
+
+span.strong {
+	font-weight: normal;
+}
+
+.logo-tab-title
+{
+	font-size: 14px;
+	font-weight: bold;
+}
+
+/******** Category Bar *********/
+
+#logo-category-bar
+{
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    display: table;
+}
+
+#logo-category-name
+{
+    float: left;
+    line-height: 20px;
+    vertical-align: middle;
+}
+
+#logo-category-bar #category-drop-downs
+{
+    float: right;
+}
+
+.logo-category-drop-down
+{
+    width: 200px;
+}
+
+/***** DHTML Pop on Icon page *******/
+.dpop-close-box
+{
+    cursor: hand;
+    cursor: pointer;
+    font-size: 11px;
+    color: #2e2f91;
+    font-weight: normal;
+}
+
+.dpop-close-box img
+{
+    position: relative;
+}
+
+#dpop-drop-downs
+{
+    text-align: left;
+}
+
+#dpop-drop-downs select
+{
+    width: 225px;
+}
+
+#category-drop-downs
+{
+    text-align: right;
+}
+
+#dpop-category
+{
+    text-align: right;
+}
+
+/***** Logo Product Page ******/
+
+#caption-table-text
+{
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+
+#second-preview-image
+{
+    position: relative;
+    float: right;
+    margin-right: 5px;
+    top: -100px;
+}
+
+.details-section-text
+{
+    float: left;
+    margin-right: 5px;
+}
+.div-grid
+{
+    margin-bottom: 20px;
+    position: relative;
+    height: 100%;
+}
+
+.div-grid-top
+{
+    background-image: url('/vp/images/nns/pricinggrid/grid_pixel.gif');
+    background-repeat: repeat-x;
+    background-position: top;
+    background-color: #eff3ff;
+    position: relative;
+    width: 100%;
+}
+
+.div-grid-bottom
+{
+    background-image: url('/vp/images/nns/pricinggrid/grid_pixel.gif');
+    background-repeat: repeat-x;
+    background-position: bottom;
+}
+
+.div-grid-right
+{
+    background-image: url('/vp/images/nns/pricinggrid/grid_pixel.gif');
+    background-repeat: repeat-y;
+    background-position: right;
+    width: 100%;
+}
+
+.div-grid-left
+{
+    background-image: url('/vp/images/nns/pricinggrid/grid_pixel.gif');
+    background-repeat: repeat-y;
+    background-position: left;
+    width: 100%;
+}
+
+.div-option-headers
+{
+    font-family: 'Arial','Verdana';
+    font-size: 14px;
+    color: #000000;
+    font-weight: bold;
+    padding: 7px 10px 7px 10px;
+}
+
+.div-grid-top-left
+{
+    background-image: url('/vp/images/nns/pricinggrid/grid_tab_active_left.gif');
+    background-position: top left;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 6px;
+    width: 5px;
+}
+
+.div-grid-top-right
+{
+    background-image: url('/vp/images/nns/pricinggrid/grid_tab_active_right.gif');
+    background-position: top left;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0px;
+
+    left: 100%;
+
+    margin-left: -5px;
+    /* IE hack - fix */
+    >margin-left: -4px;
+
+    height: 6px;
+    width: 5px;
+}
+
+.div-grid-bottom-right
+{
+    background-image: url('/vp/images/nns/pricinggrid/grid_btm_right.gif');
+    background-position: top left;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 100%;
+    right: 0px;
+    height: 6px;
+    width: 5px;
+    margin-top:-5px;
+    >margin-top:-4px;
+    >margin-right:-1px;
+}
+
+.div-pricing-table
+{
+    padding: 0px 10px 0px 10px;
+    width: 100%;
+}
+
+.div-pricing-table-row, .div-pricing-table-row-last
+{  
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.div-pricing-table-row
+{
+    border-bottom: 1px solid #7d7dc1;
+}
+
+.div-pricing-table-label
+{
+    width: 80%;
+    float: left;
+    padding-left: 3px;
+}
+
+.div-pricing-table-price
+{ 
+    width: 20%;
+    text-aligN: right;
+    float: right;
+    padding-right: 3px;
+}
+
+.div-pricing-table-row-clear
+{
+    clear: both;
+}
+
+/**** Add Text Tab ******/
+
+.company-name
+{
+    border: solid 1px #A5BD79;
+    width: 180px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+#logo-add-text-title
+{
+    margin: 3px 0px 5px 10px;
+}
+
+/***** Completed Logo Tab ******/
+
+span.offer-title 
+{
+	font-size: 14px;
+	font-weight: bold;
+	color: #000000;
+}
+
+#final-preview-container
+{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 17px;
+}
+
+#final-preview-image
+{
+    margin-bottom: 4px;
+}
+
+span.offer-sub-title 
+{
+	font-size: 11px;
+	font-weight: bold;
+	color: #000000;
+}
+span.offer-text 
+{
+	font-size: 11px;
+	color: #000000;
+}
+
+table.finalreviewtable 
+{
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+}
+
+.uselogo {
+	font-size: 14px;
+	font-weight: bold;
+	color: #000000;
+	padding: 10px;
+}
+
+.GetStartedButton {
+	text-align: right;
+	padding-right: 15px;
+}
+.GetStartedButtonLeft {
+	text-align: left;
+}
+
+#logo-get-started-btn
+{
+    margin-bottom: 5px;
+}
+
+/******* Logo Title Stuff *******/
+.icon-tile
+{
+	width: 172px;
+	height:165px;
+}
+
+.icon-tile-contents
+{
+    display: table;
+    cursor: pointer; 
+    position: relative;  
+    text-align:center;
+
+}
+
+.icon-selected
+{
+	border: 2px solid #FF630A;
+}
+
+.icon-not-selected
+{
+	border: 2px solid white;
+}
+
+.icon-selected,
+.icon-not-selected
+{
+    cursor: pointer;
+}
+
+.icon-tile-inner-icon-tab
+{
+    position: relative;
+    left: 23px;
+    width: 125px; 
+    height:120px;
+}
+
+.icon-tile-inner-font-tab
+{
+    position: relative;
+    left: 23px;
+    width: 125px;
+    height:140px;
+}
+
+.icon-tile-inner-color-tab
+{
+    position: relative;
+    left: 23px;
+    width: 125px;
+    height:150px;
+}
+
+.icon-tile-inner-text-fx-tab
+{
+    position: relative; 
+    left: 23px;
+    width: 125px;
+    height:140px;
+}
+
+/******* Product Preview Control *******/
+.product-preview-positioner
+{
+    margin: 15px;
+    width: 290px;
+    height: 210px;
+}
+ 
+.product-preview-container
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.product-preview-container .product-preview
+{
+    position: absolute;
+}
+ 
+.bc-preview 
+{
+    left: 90px;
+    top: 78px;
+    z-index: 2;
+}
+
+.envelope-preview 
+{
+    left: 10px;
+    top: 129px;
+    z-index: 1;
+}
+
+.stickynote-preview
+{
+    left: 20px;
+    top: 0px;
+    z-index: 1;
+}
+
+/******* Navigation buttons *******/
+#logo-footer-nav
+{
+    background-color: #FCEFAE;
+    width: 954px;
+    display: table;
+    font-size: 0px;
+    border: 2px solid white;
+    position: relative;
+}
+
+#logo-back-btn
+{
+    padding-left: 15px;
+    float: left;
+}
+
+#logo-save-next-container
+{
+    float: right;
+    text-align: right;
+    height: 78px;
+    margin: 10px;
+}
+
+#logo-next-btn,
+#logo-skip-btn
+{
+    margin-bottom: 5px;
+}
+
+#learn-more
+{
+    margin: 10px 20px;
+}
+
+#learn-more a
+{
+	text-decoration: none;
+}
+
+#learn-more span
+{
+    padding-right: 3px;
+    font-size: 11px;
+    color: #00539F;
+    font-weight: bold;
+}
+
+/******* Top Navigation *******/
+#top-nav
+{
+    padding-bottom: 5px;
+    width: 100%;
+}
+
+#top-nav-title
+{
+	text-align: right;
+    padding-right: 20px
+}
+
+#logo-sub-header
+{
+    float: left;
+    margin: 0px;
+}
+
+#logo-sub-header-description
+{
+	margin-left: 20px;
+	margin-top: 2px;
+	padding-right: 10px;
+    float: left;
+}
+
+#logo-top-nav-controls
+{
+    text-align: right;
+}
+
+/******* Extra Color Panel *******/
+#extra-color-panel
+{
+    margin-bottom: 10px;
+    width: 100%;
+    display: table;
+}
+
+#extra-color-title
+{   
+    font-weight: bold;
+    font-size: 120%;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.extra-color-column
+{
+    float: left;
+    margin-right: 20px;
+}
+
+.extra-color-column-title
+{
+    color: #000000;
+    font-weight: bold;
+}
+
+.extra-color-option
+{
+    margin: 2px;
+}
+
+/******* Color Scheme Swatch *******/
+.logo-color-swatch
+{
+    height: 20px;
+    text-align: center;
+    padding: 0px 16px;
+}
+
+.logo-color-swatch-cell-container
+{
+    display: table;
+    margin: 2px auto;
+}
+
+.logo-color-swatch-cell
+{
+    text-align: center;
+    float: left;
+    height: 16px;
+    width: 20px;
+    margin: 0px 1px;
+}
+
+/******* Industry Tab *******/
+.logo-category-groups
+{
+	padding: 0px 20px 20px 20px;
+	margin-top: 10px;
+}
+
+.logo-category-groups,
+.logo-category-group,
+.logo-category-items
+{
+	display: table;
+}
+
+.logo-category-group,
+.logo-category-items
+{
+	float: left;
+}
+
+.logo-category-items
+{
+	margin-right: 20px;
+}
+
+.logo-category-group
+{
+	margin-right: 30px;
+}
+
+.logo-category-item
+{
+	float: left;
+	clear: both;
+	padding: 2px 0px;
+}
+
+.logo-icon-count
+{
+	color: #808080;
+}
+
+.logo-category-group-title h3
+{
+	margin: 0px;
+}
+
+.logo-category-group-title
+{
+	margin-bottom: 5px;
+}
+
+.toolText
+{
+    width: 100px;
+    height: 100px;
+}
+
+/*-----------------------------------
+ *  vplogotool.brand09.css
+ *-----------------------------------*/
+/*@import url(/vp/css/vplogotool.css?siteversion=201);*/
+
+#divPageContentOuter #divPageContentInner {
+padding-left: 0px;
+padding-right: 0px;
+}
+
+span.logosavedtext,
+.undefined-price {
+	color: #D1005D;
+}

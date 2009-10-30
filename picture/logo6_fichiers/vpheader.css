@@ -1,0 +1,930 @@
+/*-----------------------------------
+ *  vpheader.css
+ *-----------------------------------*/
+/* Nav Header */
+#divHeaderTop 
+{
+	margin:0px;
+	padding:0px;
+	width:721px;
+	/*height:86px;*/
+}
+#tblNavHeader {
+	width:721px;
+	/*height:86px;*/
+}
+#tblNavHeader span.separator {
+	text-align: center;
+	cursor: default;
+	margin-left: 6px;
+	margin-right: 6px;
+}
+#tdNavHeaderLogo 
+{
+	width:499px;
+	/*height:64px;*/
+	background-color:#FFFFFF;
+}
+#tdNavHeaderEmptySpace 
+{
+	width:222px;
+	height:22px; /* Fixes DSS/Radio ad */
+	background-color:#FFFFFF;
+}
+#tdNavHeaderDSSAd 
+{
+	width:182px;
+	height:42px; /* Fixes DSS/Radio ad */
+	text-align:left;
+	vertical-align:middle;
+	white-space: nowrap;
+	background-color:#FFCC66;
+	background-image: url(/vp/images/nns/nav/header/hm_search_hdr.gif);
+	background-repeat: no-repeat;
+}
+.radioAdLine1
+{
+	font-family:Arial;
+	font-size:12px;
+	font-weight:bold;
+	color: #2e2f91;
+}
+.radioAdLine2
+{
+	font-family:Arial;
+	font-size:11px;
+	color: #2e2f91;
+}
+.NavHeaderDSSAdLine1
+{
+	font-family:Arial;
+	font-size:12px;
+	font-weight:bold;
+	color: #2E2F91;
+}
+.NavHeaderDSSAdLine2
+{
+	font-family:Arial;
+	font-size:14px;
+	font-weight:bold;
+	color: #2E2F91;
+}
+.NavHeaderDSSDEAdLine1
+{
+	font-family:Arial;
+	font-size:11px;
+	font-weight:bold;
+	color: #2E2F91;
+}
+.NavHeaderDSSDEAdLine3
+{
+	font-family:Arial;
+	font-size:11px;
+	font-weight:normal;
+	color: #2E2F91;
+}
+.NavHeaderDSSDECSAdLine1
+{
+	font-family:Arial;
+	font-size:11px;
+	font-weight:bold;
+	color: #2E2F91;
+}
+.NavHeaderDSSDECSAdLine2
+{
+	font-family:Arial;
+	font-size:11px;
+	font-weight:bold;
+	color: #2E2F91;
+}
+.NavHeaderDSSDEAdHighValueNumber
+{
+	font-family:Arial;
+	font-size:14px;
+	font-weight:bold;
+	color: #2E2F91;
+}
+.NavHeaderDSSDEAdHighValueFreetext
+{
+	font-family:Arial;
+	font-size:9px;
+	color: #2E2F91;
+}
+
+.NavHeaderDealerAdLine1
+{
+	font-family:Arial;
+	font-size:10px;
+	font-weight:bold;
+	color: #2E2F91;
+	text-align:left;
+}
+.NavHeaderDealerAdLine2
+{
+	font-family:Arial;
+	font-size:12px;
+	font-weight:bold;
+	color: #2E2F91;
+	text-align:left;
+}
+div.DssAd
+{
+	padding-left: 10px;
+}
+#tdNavHeaderDSSAdLeft 
+{
+	width:40px;
+	/*height:42px;*/
+	background-color:#FFE5B3;
+	background-image: url(/vp/images/nns/nav/header/hm_search_box_lt.gif);
+	background-repeat: no-repeat;
+}
+#tdNavHeaderMenuBar 
+{
+	width:493px;
+	height:22px;
+	text-align:right;
+	vertical-align:middle;
+	font-family:Arial;
+	font-size:11px;
+	white-space: nowrap;
+	color: Black;
+	background-color:#CCDCFE;
+	background-image: url(/vp/images/nns/nav/header/hm_utility_bar_tile_horizontal.GIF);
+	background-repeat:repeat-x;
+}
+
+#tdNavHeaderAccountMenuBar
+{
+	width:222px;
+	height:22px;
+	text-align:left;
+	vertical-align:middle;
+	font-family:Arial;
+	font-size:11px;
+	white-space: nowrap;
+	color: Black;
+	background-color:#7AA2EA;
+	background-image: url(/vp/images/nns/nav/header/hm_utility_cust_bar.gif);
+	background-repeat: no-repeat;
+}
+.NavHeaderAccountMenuBar
+{
+	text-align:center;
+	vertical-align:middle;
+	font-family:Arial;
+	font-size:11px;
+	white-space: nowrap;
+}
+.NavHeaderMenuBarItem 
+{
+	text-decoration: none;
+	color:Black;
+}
+
+.NavHeaderMenuBarItem:hover
+{
+	text-decoration: underline;
+}
+.NavHeaderMenuBarItemBold
+{
+	text-decoration: none;
+	color:Black;
+	font-weight:bold;
+	vertical-align:middle;
+	font-family:Arial;
+	font-size:11px;
+}
+
+.NavHeaderMenuBarItemBold:hover
+{
+	text-decoration: underline;
+}
+
+.ProductSearchLine1
+{
+	font-weight:bold;
+	color:#2E2F91;
+}
+
+.ProductSearchTextBox
+{
+	width:130px;
+	font-size:10px;
+}
+
+/* AnyLink */
+
+#dropmenudiv {
+position:absolute;
+border-top: 1px solid #FFFFFF; 
+border-left: 1px solid #FFFFFF; 
+border-right: 1px solid #292A94; 
+border-bottom: 1px solid #292A94; 
+font-weight:normal;
+font-size:11px;
+white-space: nowrap;
+color: Black;
+line-height:18px;
+z-index:100;
+padding:5px;
+/* filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true') */
+}
+
+#dropmenudiv a{
+width: 100%; 
+display: block;
+text-indent: 3px;
+font-weight:normal;
+font-size:11px;
+white-space: nowrap;
+color: Black;
+border-bottom: 0px; /*1px solid #292A94; */
+padding: 1px 0;
+text-decoration: none;
+}
+#dropmenudiv a:hover
+{
+	text-decoration: underline;
+}
+
+#dropmenudiv a:hover{ /*hover background color*/
+	background-color: #FFCC66;
+}
+
+/* Popup Header */
+#divPopupHeaderTop
+{
+	background-color:#FFFFFF;
+	width:100%;
+	height: 46px;
+}
+
+#divPopupHeaderTop #imgPopupHeaderLogo
+{
+	float:left;
+	margin-left:10px;
+}
+
+#divPopupHeaderTop #imgPopupHeaderCloseButton
+{
+	float:right;
+	vertical-align:middle;
+	margin-right:10px;
+	margin-top:15px;
+}
+
+#divPopupHeaderBorder
+{
+	background-color:#DEDBDE;
+	width:100%;
+	height:5px;
+	line-height:1px;
+}
+#divCobrandMsg
+{
+	position:absolute;
+	top:70px;
+	left:260px;
+	font-size:12px;
+}
+
+#tdNavHeaderMenuBarLeft
+{
+	width:6px;
+	height:20px;
+	background-image: url(/vp/images/nns/nav/header/hm_utility_bar_tile_left.gif);
+}
+
+/*============================================================================
+ * OVERRIDES FOR FLUID SITE WIDTH
+ *============================================================================*/
+
+/* Nav Header for Fluid Width Page Template  (overrides vpgheader.css) */
+body.fluid-width-header #tblNavHeader 
+{
+	width:100%;
+}
+
+body.fluid-width-header #tdNavHeaderLogo 
+{
+	width:auto;
+}
+
+body.fluid-width-header #tdNavHeaderEmptySpace 
+{
+	width:220px;
+}
+
+body.fluid-width-header #tdNavHeaderDSSAdLeft 
+{
+	display:none;
+}
+
+body.fluid-width-header #tdNavHeaderDSSAd 
+{
+	width:220px;
+	height:42px; /* Fixes DSS/Radio ad */
+	background-image: url(/vp/images/nns/nav/header/fluid/header_orange_section.gif);
+}
+
+body.fluid-width-header #tdNavHeaderDSSAd table,
+body.fluid-width-header #tdNavHeaderDSSAdRB table
+{
+	margin-left:40px;
+}
+
+body.fluid-width-header #tdNavHeaderDSSAd div,
+body.fluid-width-header #tdNavHeaderDSSAdRB div
+{
+	margin-left:40px;
+}
+
+body.fluid-width-header #tdNavHeaderMenuBar 
+{	
+	width:auto;
+	height:20px;
+	background-image: url(/vp/images/nns/nav/header/fluid/top_nav_tile.gif);
+	background-repeat:repeat-x;
+}
+
+body.fluid-width-header #tdNavHeaderAccountMenuBar
+{
+	width:220px;
+	height:20px;
+	background-image: url(/vp/images/nns/nav/header/fluid/top_nav_right_slice.gif);
+}
+
+body.fluid-width-header #tdNavHeaderMenuBarLeft
+{
+	width:6px;
+	background-image: url(/vp/images/nns/nav/header/fluid/top_nav_left_slice.gif);
+}
+
+#tdNavHeaderLogoRB
+{
+
+}
+
+#tdNavHeaderDSSAdLeftRB
+{
+	width:40px;
+	background-image: url(/vp/images/nns/nav/header/hm_search_box_lt.gif);
+	background-repeat: no-repeat;
+	background-position:bottom;
+}
+
+body.fluid-width-header #tdNavHeaderDSSAdLeftRB
+{
+	display:none;
+}
+
+#tdNavHeaderDSSAdRB
+{
+	width:182px;
+	height:42px; /* Fixes DSS/Radio ad */
+	text-align:left;
+	vertical-align:bottom;
+	white-space: nowrap;
+	background-image: url(/vp/images/nns/nav/header/hm_search_hdr.gif);
+	background-repeat: no-repeat;
+	background-position:bottom;
+}
+
+body.fluid-width-header #tdNavHeaderDSSAdRB
+{
+	width:220px;
+	height:42px; /* Fixes DSS/Radio ad */
+	background-image: url(/vp/images/nns/nav/header/fluid/header_orange_section.gif);
+}
+
+img#imgVPTagline
+{
+	margin:0px 0px 7px 7px;
+}
+/*-----------------------------------
+ *  vpheader.brand09.css
+ *-----------------------------------*/
+/*@import url(/vp/css/vpheader.css?siteversion=201);*/
+
+body.center-justify
+{
+	background: #CAE8F9 url(/vp/images/b09/common/page-bg/bg/bkg-tile-2.png) repeat-x top left;
+
+	height:100%;
+}
+
+html.fluid-width
+{
+	background: transparent;
+	background-color:transparent;
+}
+
+
+body.fluid-width
+{
+	background: transparent;
+}
+
+html>body.fluid-width
+{
+	background: transparent;
+}
+
+/*
+ *  Logo/ad area
+ */
+ 
+#tblNavHeader, #tblNavHeaderMenu
+{
+	width:722px;
+}
+ 
+body.fluid-width-header #tblNavHeader,
+body.fluid-width-header #tblNavHeaderMenu
+{
+	width:100%;
+}
+
+#trNavHeaderLogoAd,
+body.fluid-width-header #tdNavHeaderContainer
+{
+	width:100%;
+}
+
+#tdNavHeaderContainer
+{
+	width:722px;
+	background-color:transparent;
+}
+
+body.fluid-width-header #tdNavHeaderLogo,
+#tdNavHeaderLogo
+{
+	background-color:Transparent;
+	width:195px;
+	vertical-align:bottom;
+}
+
+#tdNavHeaderLogo img
+{
+	margin-bottom:5px;
+}
+
+#tdNavHeaderLogoTagline
+{
+	width:308px;
+	padding:0px 0px 11px 7px;
+	vertical-align:bottom;
+}
+
+body.fluid-width-header #tdNavHeaderLogoTagline,
+body.fixed960 #tdNavHeaderLogoTagline
+{
+	width:auto;
+}
+
+#tdNavHeaderEmptySpace
+{
+	background-color:Transparent;
+	width:527px;
+}
+
+body.fluid-width-header #tdNavHeaderEmptySpace
+{
+	width:auto;
+}
+
+#tdNavHeaderDSSAdTop
+{
+	text-align:right;
+	width:527px;
+}
+
+body.fluid-width-header #tdNavHeaderDSSAdTop
+{
+	width:auto;
+}
+
+#headerAdTop
+{
+	width:100%;
+	float:right;
+}
+#headerAdTop .tp
+{
+	background:url(/vp/images/b09/common/page-bg/top-nav/info-tab/top.jpg) no-repeat bottom right;
+	height:3px;
+	line-height:2px;
+}
+#headerAdTop .tp td
+{
+	line-height:2px;
+}
+#headerAdTop .md
+{
+	background:url(/vp/images/b09/common/page-bg/top-nav/info-tab/middle.gif) repeat-y top right;
+	text-align:right;
+}
+
+#headerAdTop .md td
+{
+	padding-right:10px;
+	padding-bottom:5px;
+	text-align:right;
+}
+
+#headerAdTop .md div
+{
+	padding-right:5px;
+}
+
+#headerAdTop .md table
+{
+	float:right;
+	text-align:right;
+	margin-right:10px;
+}
+
+#headerAdTop .bt
+{
+	background:url(/vp/images/b09/common/page-bg/top-nav/info-tab/bottom.gif) no-repeat top right;
+	height:2px;
+	line-height:2px;
+}
+
+#tdNavHeaderDSSAdTop table,
+#headerAdBottom
+{
+	float:right;
+}
+
+#tdNavHeaderDSSAdBottom
+{
+	vertical-align:bottom;
+	background-color:Transparent;
+	width:219px;
+	text-align:right;
+}
+
+body.fluid-width-header #tdNavHeaderDSSAdBottom,
+body.fixed-960 #tdNavHeaderDSSAdBottom
+{
+	width:auto;
+}
+
+#headerAdBottom td.lt
+{
+	height:18px;
+	width:25px;
+	background:url(/vp/images/b09/common/page-bg/top-nav/call-tab/left.gif) no-repeat bottom left;
+}
+#headerAdBottom td.rt
+{
+	height:18px;
+	width:5px;
+	background:url(/vp/images/b09/common/page-bg/top-nav/call-tab/right.gif) no-repeat bottom left;
+}
+#headerAdBottom td.md
+{
+	background:url(/vp/images/b09/common/page-bg/top-nav/call-tab/middle.gif) repeat-x bottom left;
+	text-align:right;
+	margin-right:auto;
+}
+
+/*
+ * Ad space styling
+ */
+ #tblNavHeaderDealer
+ {
+ 	width:100%;
+ }
+ 
+.NavHeaderDSSDEAdLine3, 
+.NavHeaderDSSDEAdLine2,
+.NavHeaderDSSDEAdLine1,
+.NavHeaderDealerAdLine2,
+.NavHeaderDealerAdLine1
+{
+	color:Black;
+	font-size:12px;
+}
+
+.NavHeaderDealerAdLine1
+{
+	font-weight:normal;
+}
+
+ a .NavHeaderDealerAdLine1
+{
+	color:#00539F;
+	font-size:12px;
+}
+
+span.CtlgQuickSearchLine1
+{
+	font-size:12px;
+}
+
+#aCatalogSearch
+{
+	vertical-align:text-bottom;
+}
+
+/*
+ *  Menu Bar Styling
+ */
+
+#trNavHeaderAccountMenuBar
+{
+	vertical-align:middle;
+}
+
+.NavHeaderMenuBarItem
+{
+	color:White;
+	font-size:11px;
+}
+
+body.fluid-width-header .NavHeaderMenuBarItem,
+body.fixed-960 .NavHeaderMenuBarItem
+{
+	font-size:12px;
+}
+
+.NavHeaderMenuBarItem:hover
+{
+	color:White;
+	text-decoration:underline;
+}
+
+#tdNavHeaderMenuBar
+{
+	background: url(/vp/images/b09/common/page-bg/top-nav/middle.gif) repeat-x top right;
+	height:31px;
+	color: White;
+	text-align:left;
+	font-size:12px;
+	line-height:31px;
+	vertical-align:middle;
+}
+
+body.fixed-960 #tdNavHeaderMenuBar
+{
+	background: url(/vp/images/b09/common/page-bg/top-nav/middle.gif) repeat-x top right;
+	padding:0px 0px 0px 10px;
+	width:605px;
+}
+
+
+body.fluid-width-header #tdNavHeaderMenuBar
+{
+	background: url(/vp/images/b09/common/page-bg/top-nav/middle.gif) repeat-x top right;
+	padding:0px 0px 0px 10px;
+	width:auto;
+}
+
+
+#tdNavHeaderMenuBar img.separator,
+#divNavHeaderAccount img.separator,
+.NavHeaderAccountMenuBar img.separator
+{
+	margin:0px 4px 0px 4px;
+	vertical-align:middle;
+}
+
+body.fluid-width-header #tdNavHeaderMenuBar img.separator,
+body.fixed-960 .NavHeaderAccountMenuBar img.separator,
+body.fluid-width-header .NavHeaderAccountMenuBar img.separator,
+body.fixed-960 #tdNavHeaderMenuBar img.separator,
+body.fluid-width-header #divNavHeaderAccount img.separator,
+body.fixed-960 #divNavHeaderAccount img.separator
+{
+	margin:0px 7px 0px 7px;
+}
+
+body.fluid-width-header
+#tdNavHeaderMenuBarLeft,
+#tdNavHeaderMenuBarLeft
+{
+	background: url(/vp/images/b09/common/page-bg/top-nav/left.gif) no-repeat top left;
+	width:10px;
+	height:31px;
+	margin:0px;
+}
+
+#aCartTextUtility
+{
+	color:White;
+	font-weight:normal;
+	font-size:11px;
+}
+
+body.fluid-width-header #tdNavHeaderMenuBar a,
+body.fixed-960 #tdNavHeaderMenuBar a,
+body.fluid-width-header #aCartTextUtility,
+body.fixed-960 #aCartTextUtility
+{
+	color:White;
+	font-weight:normal;
+	font-size:12px;
+}
+
+#tdNavHeaderAccountMenuBar
+{
+	background: url(/vp/images/b09/common/page-bg/top-nav/right.png) no-repeat top right;
+	color:White;
+	height:31px;
+	line-height:31px;
+	padding:0px;
+	position:relative;
+	right:0px;
+	text-align:right;	
+	vertical-align:middle;
+	width:220px;
+	white-space:nowrap;
+}
+
+body.fluid-width-header
+#tdNavHeaderAccountMenuBar
+{
+	background: url(/vp/images/b09/common/page-bg/top-nav/right.png) no-repeat top right;
+	height:31px;
+	position:relative;
+	text-align:right;
+	white-space:nowrap;
+	width:335px;
+}
+#divNavHeaderAccount
+{
+	float:right !important;
+	line-height:30px;
+	position:static;
+	padding:0px 10px 0px 0px;
+	right:0px;
+	text-align:right;
+	width:auto;
+}
+
+#tdNavHeaderMenuBar table
+{
+	width:100%;
+	display:inline;
+	vertical-align:middle;
+}
+
+td.NavHeaderAccountMenuBar
+{
+	margin-left:10px;
+}
+
+a.NavHeaderMenuBarItemBold
+{
+	vertical-align:bottom;
+}
+
+#aCartImageUtility
+{
+	margin-right:3px;
+}
+
+#aCartImageUtility img
+{
+	vertical-align:middle;
+}
+
+/*
+ *  Select a country flyout
+ */
+ 
+ #dropmenudiv
+ {
+ 	background-color:#F0F8FE !important;
+ 	border-right: 1px solid #00539F; 
+	border-bottom: 1px solid #00539F; 
+ }
+ 
+#dropmenudiv a
+{
+	color:#00539F;
+	text-align:left;
+}
+ 
+ #dropmenudiv a:hover
+ {
+ 	background-color:#00539F;
+ 	color:white;
+ }
+ 
+/*
+ *  Welcome header 
+ */
+ 
+#containerWelcomeHeader 
+{
+	position:absolute;
+	top:3px;
+	left:21%;
+	/*width:410px;
+	max-width:410px;*/
+	text-align:left;
+}
+
+* html #containerWelcomeHeader,
+html > body #containerWelcomeHeader
+{
+	width:auto;
+}
+
+#tableWelcomeHeader,
+#divWelcomeHeader
+{
+	width:100%;
+	position:relative;
+	padding-right:5px;
+}
+
+#tableWelcomeHeader td.tdWelcomeHeader
+{ 	
+	color:white;
+	font-family:Arial;
+	font-size:16px;
+  	font-weight:bold;
+  	width:auto;
+}
+
+#tableWelcomeHeader td.tdImgClose
+{
+	padding-right:5px;
+	*padding-right:15px; /* FOR IE */
+	text-align:right;
+	width:23px;
+}
+
+td.tdImgClose img
+{
+	cursor:pointer;
+}
+
+
+#tblWelcomeText
+{
+	/*width:100%;*/
+	padding-right:10px;
+}
+
+#tblWelcomeText td.description,
+#subheading
+{
+	bottom:0px;
+	padding-top:15px;
+	position:relative;
+	/*width:320px;*/
+}
+
+#tblWelcomeText td#tdLink
+{
+	padding-right:5px;
+	*padding-right:15px; /* FOR IE */
+	text-align:right;
+	vertical-align:bottom;
+	width:70px;
+}
+
+#tblWelcomeText td#tdLink a
+{
+	background:url(/vp/images/b09/common/bullet/arrow_bullet_01.gif) no-repeat right center;
+	display:inline;
+	font: 11px Arial;
+	/*font-family:Arial;*/
+	padding-right:6px;
+	margin-right:6px;
+
+}
+
+/*Min container*/
+#containerWelcomeHeaderMin
+{
+	left:230px;
+	position:absolute;
+	top:15px;
+	width:365px;
+}
+
+#containerWelcomeHeaderMin .smallDescription,
+#welcomeDescription span
+{
+	font: 11px Arial !important;
+}
+
+#containerWelcomeHeaderMin .fixed-height-container-content
+{
+	padding:10px 10px 5px 10px !important;
+	/*width:350px !important;*/
+}
+
+#containerWelcomeHeaderMin .fixed-height-container-content a
+{
+	font: 11px Arial !important;
+	margin-left:7px;
+}

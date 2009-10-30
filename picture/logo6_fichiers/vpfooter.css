@@ -1,0 +1,422 @@
+/*-----------------------------------
+ *  vpfooter.css
+ *-----------------------------------*/
+/* Nav Footer */
+
+#divFooterContainer 
+{
+  float: left;
+  text-align:center;
+  width:100%;
+}
+
+#tblNavFooter 
+{
+	height:155px;
+	width:100%;
+}
+
+#tblNavFooter.tblNavFooter-disabled
+{
+	height: auto;
+}
+
+#tdNavFooterTopLeft 
+{
+	width:6px;
+	background-image: url(/vp/images/nns/nav/footer/fluid/footer_left_slice_tile.gif);
+	background-repeat:repeat-y;
+}
+
+#tdNavFooterTopRight {
+	width:5px;
+	background-image: url(/vp/images/nns/nav/footer/hm_footer_tile_right.gif);
+}
+
+body.fluid-width #tdNavFooterTopRight {
+	background-image: url(/vp/images/nns/nav/footer/fluid/footer_right_slice_tile.gif);
+}
+
+#divFooterError {
+	width:auto;
+	text-align:center;
+	padding-top:60px;
+	font-family:Arial;
+	font-size:14px;
+}
+
+	
+#tdNavFooterTop {
+	width:auto;
+	background-image: url(/vp/images/nns/nav/footer/fluid/footer_center_tile.gif);
+	background-position: left top;
+	background-repeat:repeat;
+	text-align:center;
+	color:White;
+	vertical-align:middle;
+	font-family:Arial;
+	font-size:14px;
+}
+
+#tdNavFooterCenterLeft
+{
+	background-image: url(/vp/images/nns/nav/footer/fluid/footer_left_slice_bottom.gif);
+	background-repeat:no-repeat;
+}
+
+#tdNavFooterCenterMiddle
+{
+	background-image: url(/vp/images/nns/nav/footer/fluid/footer_tile_bottom.gif);
+	background-repeat:repeat-x;
+}
+
+#tdNavFooterCenterRight
+{
+	background-image: url(/vp/images/nns/nav/footer/hm_footer_bottom_right.gif);
+	background-repeat:no-repeat;
+}
+
+body.fluid-width #tdNavFooterCenterRight
+{
+	background-image: url(/vp/images/nns/nav/footer/fluid/footer_right_slice_bottom.gif);
+}
+
+#tdNavFooterTopB 
+{
+	background-image: url(/vp/images/nns/nav/footer/hm_footer_bottom.gif);
+	background-position: left top;
+	width:100%;
+	height:8px;
+}
+#tdNavFooterBottom {
+	width:100%;
+	height:54px;
+	color:Black;
+	text-align:center;
+	vertical-align:middle;
+	font-family:Arial;
+	font-size:14px;
+}
+
+.NavFooterMajorItem {
+	text-decoration:none;
+	font-family:Arial;
+	font-size:12px;
+}
+
+div.NavFooterMajorItem
+{
+	padding: 40px;
+}
+
+div.NavFooterMajorItem a
+{
+	font-size: 18px;
+}
+
+div.OmxNavFooterMajorItem a
+{
+	font-size: 14px;
+}
+
+
+.NavFooterMajorItem:hover {
+	text-decoration:underline;
+}
+.NavFooterMinorItem {
+	text-decoration:none;
+	font-family:Arial;
+	font-size:11px;
+	color:Black;
+}
+.NavFooterMinorItem:hover {
+	text-decoration:underline;
+	color:Black;
+}
+
+.about-vistaprint-content-upperleft
+{
+	background-image: url(/vp/images/nns/common/background/customers_box/top_lt.gif);
+	background-repeat: no-repeat;
+	width: 10px;
+	height: 10px;
+}
+
+.about-vistaprint-content-upper
+{
+	background-image: url(/vp/images/nns/common/background/customers_box/top_tl.gif);
+	background-repeat: repeat-x;
+	width: auto;
+	height: 10px;
+}
+
+.about-vistaprint-content-upperright
+{
+	background-image: url(/vp/images/nns/common/background/customers_box/top_rt.gif);
+	background-repeat: no-repeat;
+	width: 10px;
+	height: 10px;
+}
+
+.about-vistaprint-content-left
+{
+	background-image: url(/vp/images/nns/common/background/customers_box/left_tl.gif);
+	background-repeat: repeat-y;
+	width: 10px;
+	height: auto;
+}
+
+.about-vistaprint-content 
+{
+	background-color: #EFF3FF;
+	color: #2E2F91; 
+	font-size: 11px;	
+	text-align:center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.about-vistaprint-content-right
+{
+	background-image: url(/vp/images/nns/common/background/customers_box/right_tl.gif);
+	background-repeat: repeat-y;
+	width: 10px;
+	height: auto;
+}
+
+.about-vistaprint-content-lowerleft
+{
+	background-image: url(/vp/images/nns/common/background/customers_box/bot_lt.gif);
+	background-repeat: no-repeat;
+	width: 10px;
+	height: 10px;
+}
+
+.about-vistaprint-content-lower
+{
+	background-image: url(/vp/images/nns/common/background/customers_box/bot_tl.gif);
+	background-repeat: repeat-x;
+	width: auto;
+	height: 10px;
+}
+
+.about-vistaprint-content-lowerright
+{
+	background-image: url(/vp/images/nns/common/background/customers_box/bot_rt.gif);
+	background-repeat: no-repeat;
+	width: 10px;
+	height: 10px;
+}
+
+.payment-types-lock-and-key {
+	vertical-align: middle;
+}
+
+.payment-types-secure-key {
+	font-size: 11px;
+	margin-left: 5px;
+	margin-bottom: 10px;
+	padding-bottom: 5px;
+	border-collapse: collapse;
+}
+
+.payment-types-table-cell {
+	width: 50px;
+	height: 30px;
+	margin-left: 10px;
+	margin-right: 10px
+}
+
+/*new footer styles*/
+
+#tableJuly07Menu
+{
+	width:650px;
+	margin-top:20px;
+	margin-bottom:20px;
+	text-align:left;
+}
+td.sepRule
+{
+	padding-top:20px;
+	padding-bottom:20px;
+	background-image:url(/vp/images/nns/home/footer/verticalRuleFooter.gif);
+	background-repeat:repeat-y;
+}
+
+td.july07menuText
+{
+	text-decoration:none;
+	font-family:Arial;
+	font-size:11px;
+	color:White;
+	padding-left:5px;
+	vertical-align: top;
+}
+div.july07boldMenu
+{
+	font-weight:bold;
+	padding-bottom:10Px;
+}
+a.regMenu, td.july07menuText a
+{
+	text-decoration:none;
+	display:block;
+	font-weight:normal;
+	color:White;
+}
+a.regMenu:hover, td.july07menuText a:hover
+{
+	text-decoration:underline;
+	color:White;
+}
+
+/*country sites*/
+div.country-menu
+{
+	margin: 0 auto;
+}
+
+#divPromotionalCountryMenu
+{
+	width: 641px;
+	background-image:url(/vp/images/nns/home/footer/footerGraphic.gif);
+	background-repeat:repeat-y;
+	background-position:center;
+	text-align:center;
+}
+
+div.country-menu ul
+{
+	margin: 0;
+	padding: 0;
+}
+
+div.country-menu li
+{
+	margin-left: 0;
+	list-style: none;
+	display: inline;
+	background-image: none;
+	padding: 0;
+}
+
+div.country-menu a
+{
+	text-decoration:none;
+	font-family:Arial;
+	font-size:11px;
+	color: Black;
+}
+
+#divPromotionalCountryMenu a,
+#divPromotionalCountryMenu span.separator
+{
+	color:White;
+}
+
+div.country-menu a:hover
+{
+	text-decoration:underline;
+}
+
+
+#tblNavFooterBottom{
+	width:100%;
+}
+
+/*
+* 
+* BRAND 2009 ADDITIONS
+*
+*/
+
+.tblFooterMenu
+{
+	width: 100%;
+}
+
+.tblFooterMenu td
+{
+	padding-left: 20px;
+	vertical-align:top;
+	text-align: left;
+}
+
+.tblFooterMenu .footer-menu-link,
+.tblFooterMenu .footer-menu-header
+{
+	margin-bottom: 5px;
+}
+
+#divPromotionalCountryMenu
+{
+	padding-top: 10px;
+	width: 100%;
+}
+
+.about-us-container
+{
+	width: 531px;
+}
+
+body.fixed-960 .about-us-container
+{
+	width: 759px;
+}
+
+
+.OmxNavFooterMajorItem,
+.footer-menu-content
+{
+	text-align:center;
+}
+
+div.footer-links
+{
+	border-top: 1px solid #BEC3C5;
+	padding-top: 20px;
+}
+
+div.footer-links span
+{
+	padding-left: 6px;
+	padding-right: 6px;
+}
+
+/*-----------------------------------
+ *  vpfooter.brand09.css
+ *-----------------------------------*/
+/*@import url(/vp/css/vpfooter.css?siteversion=201);*/
+
+#divFooterContainer
+{
+	float: none;
+	clear: both;
+}
+
+#divPromotionalCountryMenu
+{
+	background-image:none;
+}
+
+#divPromotionalCountryMenu a, 
+#divPromotionalCountryMenu span.separator 
+{
+	color: #00539f;
+}
+
+td.sepRule
+{
+	background-image:url(/vp/images/b09/common/divider/divider-01/middle.gif);
+	background-position:center center;
+	padding-left:0;
+	width:30px;
+}
+
+.about-vistaprint-content
+{
+	background-color:Transparent;
+	color: #00539F;
+}
+

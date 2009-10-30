@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div id="titre1">
+        <h1>{{ receipe.name }}</h1>
+    </div>
+    <div id='middle_column2'>
+        <div id="receipe_feature">
+            Note :&nbsp;&nbsp;&nbsp;<img src="/picture/note{{ receipe.mark }}.png"><br/>
+            Coût :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="/picture/cout{{ receipe.price }}.png"><br/>
+            Difficulté :&nbsp;&nbsp;&nbsp;<img src="/picture/level{{ receipe.toughness }}.png"><br/>
+        </div>
+        <div id="ingredient">
+            <h2>Ingrédients pour {{ receipe.quantity }}</h2>
+            <div>
+                <!-- Main receipe -->
+                <ul>
+                {% for ingredient in ingredients.receipe %}
+                   <li>- {{ ingredient }}</li>
+                {% endfor %}
+                <!-- Subreceipe -->
+                {% for link in ingredients.links %}
+                   <li>- <a class="receipe_link" href="{{ link.url }}">{{ link.value }}</a></li>
+                {% endfor %}
+                </ul>
+                {% for subreceipe in ingredients.subreceipes %}
+                    <div id="subreceipe">{{ subreceipe.name }}</div>
+                    <ul>
+                    {% for ingredient in subreceipe.ingredients %}
+                       <li>- {{ ingredient }}</li>
+                    {% endfor %}
+                    </ul>
+                {% endfor %}
+            </div>
+        </div>
+        <div id="preparation">
+            <h2>Préparation</h2>
+            <ul>
+                {% for step in preparation %}
+                   <li>{{ step }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% if receipe.advice %}
+            <div id="advice" >
+                <h2>Conseil</h2>
+                {{ receipe.advice}}
+            </div>
+        {% endif %}
+    </div>
+{% endblock %}

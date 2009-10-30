@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div id="titre1">
+    <h1>Ajouter recette</h1>
+</div>
+
+<div id="add_receipe">
+    <form action="/receipe?action=receipe_add" method="post">
+        <div>
+            <label>Nom de la recette : </label>
+            <input type="text" name="name">
+        </div>
+        <div>
+            <label>Quantité : </label>
+            <input type="text" name="quantity">
+        </div>
+        <div>
+            <label>Note : </label>
+            <select name="mark">
+                {% for level in mark %}
+                    <option>{{ level }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div>
+            <label>Difficulté : </label>
+            <select name="toughness">
+                {% for level in toughness %}
+                    <option>{{ level }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div>
+            <label>Prix : </label>
+            <select name="price">
+                {% for level in price %}
+                    <option>{{ level }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div>
+            <label>Categorie : </label>
+            <select name="category" STYLE="width: 150px">
+                {% for category in categories %}
+                    <option value="{{ category.key }}">{{ category.title }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div><label>Conseil : </label> <textarea name="advice" cols=50 rows=2></textarea></div>
+        <div><label>Ingredient</label><textarea name="ingredient" cols=50 rows=8>{{ receipe.advice }}</textarea></div>
+        <div><label>Préparation</label><textarea name="preparation" cols=50 rows=8>{{ receipe.advice }}</textarea></div>
+        <div><input type="submit" value="Valider" /></div>
+    </form>
+    <br><br><a href='/receipe?action=receipe_list_update'>Retourner à la liste des recettes</a>
+</div>
+{% endblock %}

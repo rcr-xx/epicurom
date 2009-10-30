@@ -1,0 +1,19 @@
+application: epicurom
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+
+- url: /stylesheet
+  static_dir: stylesheet
+
+- url: /picture
+  static_dir: picture
+
+
+- url: /js
+  static_dir: js
+
+- url: /.*
+  script: epicurom.py

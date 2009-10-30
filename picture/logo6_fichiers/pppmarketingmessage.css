@@ -1,0 +1,549 @@
+/*-----------------------------------
+ *  PPPMarketingMessage.css
+ *-----------------------------------*/
+#divPPPMessage
+{
+	width:100%;
+}
+
+#tblBoxedMsg
+{
+	width:100%;
+}
+
+/*boxed message*/
+#boxedmsg
+{
+	text-align:center;
+}
+
+.boxedMsgRegular
+{
+	text-align:center;
+}
+/*size of the blinking box*/
+.oneLine
+{
+	text-align:center;
+	height:60px;
+}
+.twoLines
+{
+	text-align:center;
+	height:80px;
+}
+.threeLines
+{
+	text-align:center;
+	height:100px;
+}
+.moreThanThreeLines
+{
+	text-align:center;
+	height:200px;
+}
+.breakSmall
+{
+	text-align:center;
+	height:110px;
+}
+
+.breakMedium
+{
+	text-align:center;
+	height:140px;
+}
+.breakLarge
+{
+	text-align:center;
+	height:200px;
+}
+/*end of size of the blinking box*/
+
+/*size of the blinking unboxed*/
+.oneLineU
+{
+	text-align:center;
+	height:30px;
+}
+.twoLinesU
+{
+	text-align:center;
+	height:40px;
+}
+.threeLinesU
+{
+	text-align:center;
+	height:50px;
+}
+.moreThanThreeLinesU
+{
+	text-align:center;
+	height:100px;
+}
+.breakSmallU
+{
+	text-align:center;
+	height:60px;
+}
+
+.breakMediumU
+{
+	text-align:center;
+	height:70px;
+}
+.breakLargeU
+{
+	text-align:center;
+	height:100px;
+}
+/*end of size of the blinking unboxed*/
+
+
+Td.topleft
+{
+	background-image: url(/vp/images/nns/common/background/yellow_box_yellow_stroke/yellow_box_top_lt.gif);
+	background-repeat:no-repeat;
+	background-position:bottom right;
+	width:10px;
+	height:10px;
+}
+
+td.toptile
+{
+	background-image: url(/vp/images/nns/common/background/yellow_box_yellow_stroke/yellow_box_top_tl.gif);
+    background-repeat:repeat-x;
+    background-position:bottom;
+}
+
+Td.topright
+{
+	background-image: url(/vp/images/nns/common/background/yellow_box_yellow_stroke/yellow_box_top_rt.gif);
+	background-repeat:no-repeat;
+	background-position:bottom left;
+	width:10px;
+	height:10px;
+}
+
+.middleleft
+{   
+    background-image: url(/vp/images/nns/common/background/yellow_box_yellow_stroke/yellow_box_tl_lt.gif);
+    background-repeat:repeat-y;
+    width:10px;
+}
+
+.middletile
+{
+    background-color: #fcf4ca;
+}
+
+.middleright
+{
+	background-image: url(/vp/images/nns/common/background/yellow_box_yellow_stroke/yellow_box_rt_tl.gif);
+    background-repeat:repeat-y;
+    width:10px;
+}
+
+.bottomleft
+{
+	background-image:url(/vp/images/nns/common/background/yellow_box_yellow_stroke/yellow_box_bot_lt.gif);
+	background-repeat:no-repeat;
+	width:10px;
+	height:10px;
+}
+.bottomtile
+{
+	background-image: url(/vp/images/nns/common/background/yellow_box_yellow_stroke/yellow_box_bot_tl.gif);
+    background-repeat:repeat-x;
+}
+.bottomright
+{
+	background-image:url(/vp/images/nns/common/background/yellow_box_yellow_stroke/yellow_box_bot_rt.gif);
+	background-repeat:no-repeat;
+	width:10px;
+	height:10px;
+}
+
+
+/*#noboxmsg*/
+.tblNonBoxedMsgClass
+{
+	text-align:center;
+	vertical-align:middle;
+	padding-bottom:5px;
+}
+.regMsg
+{
+	font-size:12px;
+	font-weight:bold;
+	padding-left:2px;
+	color:#000000;
+	display:inline;
+	
+}
+.empMsg
+{
+	font-size:12px;
+	font-weight:bold;
+	padding-left:2px;
+	color:#DE0000;
+	display:inline;
+	
+}
+#noLightBulbTable,#parenthesisTable
+{
+	margin-top:10px;
+	margin-bottom:10px;
+}
+#noLightBulbTable tr td
+{
+	font-size:16px;
+	color:#000000;
+}
+
+#divPPPMessage .highlight,
+#tblBoxedMsg .highlight,
+#divPPPMessageBox .highlight
+{
+	font-size:16px;
+	font-weight:bold;
+	color:#DE0000;
+}
+
+.parenthesis
+{
+	font-size:16px;
+	font-weight:bold;
+	color:#3e4db1;
+}
+.parenthesismsg
+{
+	font-size:16px;
+	font-weight:bold;
+	color:#000000;
+	padding-left:5px;
+	padding-right:5px;
+}
+.normalBlack
+{
+	font-size:12px;
+	font-weight:bold;
+	color:#000000;
+}
+.normalRed
+{
+	font-size:12px;
+	font-weight:bold;
+	color:#DE0000;
+}
+.largerBlack
+{
+	font-size:18px;
+	font-weight:bold;
+	color:#000000;
+}
+.largerRed
+{
+	font-size:18px;
+	font-weight:bold;
+	color:#DE0000;
+}
+.divCopy
+{
+	padding-top:10px;
+	padding-bottom:10px;
+}
+.divToken
+{
+	padding-top:5px;
+	padding-bottom:5px;
+	background-color:#E5B753;/*9CA1C3;*/
+	/*color:#3e4db1;*/
+	/*color:#E5B753;*/
+	font-size: 14px;
+	font-weight:bold;
+}
+.divTokenSmall
+{
+	margin-top:5px;
+	margin-bottom:5px;
+	color:#3e4db1;
+	/*background-color:#E5B753;9CA1C3;*/
+	/*color:#3e4db1;*/
+	/*color:#E5B753;*/
+	font-size: 12px;
+}
+/*blinking message*/
+
+#blinkingTD
+{
+	width:440px;
+	background-color: #fcf4ca;
+}
+
+.blinkMsgSmall
+{
+	font-size:12px;
+	color:#000000;
+	font-weight:bold;
+	padding-left:4px;
+}
+
+.blinkMsgLarge
+{
+	font-size:14px;
+	color:#DE0000;
+	font-weight:bold;
+	padding-left:4px;
+}
+
+.blackSmallHome
+{
+	font-size:12px;
+	font-weight:bold;
+	color:#000000;
+	padding-left:2px;
+}
+
+.redLargeHome, .redhurdleprice
+{
+	font-size:14px;
+	font-weight:bold;
+	color:#DE0000;
+	padding-left:2px;
+}
+
+#legalCopyHead
+{
+	font-size:11;
+}
+
+#legalCopyBody
+{
+	font-size:10;
+}
+#divLegalCopyNarrowWidth
+{
+	padding-left:14px;
+	padding-right:2px;
+}
+#divLegalCopyFullWidth
+{
+	width:100%;
+	padding-left:3px;
+}
+
+/*-----------------------------------
+ *  PPPMarketingMessage.brand09.css
+ *-----------------------------------*/
+/*@import url(/vp/css/home/PPPMarketingMessage.css?siteversion=201);*/
+
+#tblBoxedMsg
+{
+	width:auto;
+}
+
+#divPPPMessage
+{
+	width:100%;
+	background-color:White;
+	border-left:1px solid #BEC3C5;
+	border-right:1px solid #BEC3C5;
+	padding-top:7px;
+}
+
+#divPPPMessageBox
+{
+	border-left:1px solid #BEC3C5;
+	border-right:1px solid #BEC3C5;
+}
+
+#tblPageContentWithNav #divPPPMessageBox
+{
+	border-left: 0px;
+	border-right: 0px;
+	
+}
+#divDTLargeBox #divPPPMessageBox
+{
+	border-bottom:1px solid #BEC3C5;
+	background-color:White;
+}
+#divDTBoxNextWithLeftNav #divPPPMessageBox
+{
+	border-bottom:1px solid #BEC3C5;
+	float:none;
+	background-color: #FFFFFF;
+}
+
+#divDTOuter
+{
+	line-height:34px;
+	position:relative;
+	text-align:center;
+	
+}
+
+span.divDTInner
+{
+	position:relative;
+}
+
+#liteBulb
+{
+	padding-right: 10px;
+}
+
+/*boxed message*/
+#boxedmsg
+{
+	text-align:left;
+}
+
+#tblUnBoxedMsg
+{
+	padding-left:10px;
+}
+
+#tblUnBoxedMsg td
+{
+	padding-right:5px;
+}
+
+.boxedMsgRegular
+{
+	text-align:left;
+	width: 100%;
+}
+/*size of the blinking box*/
+.oneLine
+{
+	text-align:left;
+}
+.twoLines
+{
+	text-align:left;
+}
+.threeLines
+{
+	text-align:left;
+}
+.moreThanThreeLines
+{
+	text-align:left;
+}
+.breakSmall
+{
+	text-align:left;
+}
+
+.breakMedium
+{
+	text-align:left;
+}
+.breakLarge
+{
+	text-align:left;
+}
+/*end of size of the blinking box*/
+
+/*size of the blinking unboxed*/
+.oneLineU
+{
+	text-align:left;
+}
+.twoLinesU
+{
+	text-align:left;
+}
+.threeLinesU
+{
+	text-align:left;
+}
+.moreThanThreeLinesU
+{
+	text-align:left;
+}
+.breakSmallU
+{
+	text-align:left;
+}
+
+.breakMediumU
+{
+	text-align:left;
+}
+.breakLargeU
+{
+	text-align:left;
+}
+/*end of size of the blinking unboxed*/
+
+
+Td.topleft, Td.topright
+{
+	width:3px;
+	height:20px;
+}
+
+.middleleft, .middleright
+{   
+    width:3px;
+}
+
+.middletile
+{
+    background-color: white;
+}
+
+.bottomleft, .bottomright
+{
+	width:3px;
+	height:20px;
+}
+
+/*#noboxmsg*/
+.tblNonBoxedMsgClass
+{
+	text-align:left;
+	background-color:White;
+}
+.empMsg
+{
+	color:#D1005D;
+	
+}
+#divPPPMessage .highlight,
+#tblBoxedMsg .highlight,
+#divPPPMessageBox .highlight
+{
+	color:#D1005D;
+}
+
+.normalRed
+{
+	color:#D1005D;
+}
+.largerRed
+{
+	color:#D1005D;
+}
+.divToken
+{
+}
+/*blinking message*/
+
+#blinkingTD
+{
+	background-color: transparent;
+}
+
+.blinkMsgLarge
+{
+	color:#D1005D;
+}
+
+.redLargeHome, .redhurdleprice
+{
+	color:#D1005D;
+}

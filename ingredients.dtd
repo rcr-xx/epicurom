@@ -1,0 +1,7 @@
+<!ELEMENT ingredients(receipe?, subreceipe*)>
+<!ELEMENT receipe(ingredient+)>
+<!ELEMENT subrecipe(ingedient+)>
+<!ELEMENT ingredient(quantity, name)>
+<!ELEMENT quantity(#PCDATA)>
+<!ELEMENT name(#PCDATA)>
+
