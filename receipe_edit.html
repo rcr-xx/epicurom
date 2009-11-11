@@ -57,7 +57,7 @@
             <label>Categorie</label>
             <select name="category" STYLE="width: 150px">
             {% for categorie in categories %}
-                <option value="{{ categorie.value }}" selected="{{ categorie.selected }}">{{ categorie.title }}</option>
+                <option value="{{ categorie.value}}" {{ categorie.selected }}>{{ categorie.title }}</option>
             {% endfor %}
             </select>
         </div>

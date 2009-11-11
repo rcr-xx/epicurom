@@ -57,7 +57,7 @@ img, input[type="image"] {
 #left_nav {
     background-color: #3B2911;
     padding-top: 35px;
-    width: 170px;
+    width: 190px;
     float: left;
     height: 100%;
     }
@@ -134,8 +134,12 @@ img, input[type="image"] {
     margin-bottom: 10px;
     }
 
+#subreceipe_name {
+    font-weight: bold;
+    }
+    
 #subreceipe {
-    margin-top: 8px;
+    margin-bottom: 10px;
     }
 
 #ingredient ul {
@@ -277,7 +281,7 @@ background-color: transparent;
 #right_column {
     background-color: #3B2911;
     padding-top: 35px;
-    width: 190px;
+    width: 191px;
     height: 100%;
     float: left;
     }

@@ -12,26 +12,17 @@
         </div>
         <div id="ingredient">
             <h2>Ingrédients pour {{ receipe.quantity }}</h2>
-            <div>
-                <!-- Main receipe -->
-                <ul>
-                {% for ingredient in ingredients.receipe %}
-                   <li>- {{ ingredient }}</li>
-                {% endfor %}
-                <!-- Subreceipe -->
-                {% for link in ingredients.links %}
-                   <li>- <a class="receipe_link" href="{{ link.url }}">{{ link.value }}</a></li>
+                {% for receipe in ingredients.receipes %}
+                    <div id="subreceipe">
+                        <div id="subreceipe_name">{{ receipe.name }}</div>
+                        <ul>
+                            {% for ingredient in receipe.ingredients %}
+                               <li>- {{ ingredient }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
                 {% endfor %}
                 </ul>
-                {% for subreceipe in ingredients.subreceipes %}
-                    <div id="subreceipe">{{ subreceipe.name }}</div>
-                    <ul>
-                    {% for ingredient in subreceipe.ingredients %}
-                       <li>- {{ ingredient }}</li>
-                    {% endfor %}
-                    </ul>
-                {% endfor %}
-            </div>
         </div>
         <div id="preparation">
             <h2>Préparation</h2>

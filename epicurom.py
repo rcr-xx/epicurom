@@ -54,7 +54,7 @@ def url_encode(url, additional_args):
 
 def url_decode(url):
     decode = {'url': '', 'args': {}, 'args_order': []}
-    m = re.match('(?P<url>[^?]*)\??(?P<args>[^?]*)', url) 
+    m = re.match('(?P<url>[^?]*)\??(?P<args>[^?]*)', url)
     decode['url'] = re.sub('(.*)/$', r'\1', m.group('url'))
 #    raise  '>>> %s' %decode['url']
     args = m.group('args')
@@ -157,10 +157,8 @@ class Receipe(webapp.RequestHandler):
             if not receipe:
                 raise "Not matching receipe"
             namespace['receipe'] = receipe
-            ingredients = self.get_ingredient_ns(receipe.ingredient) if receipe.ingredient else []
-            namespace['ingredients'] = ingredients
-            preparation = self.get_preparation_ns(receipe.preparation) if receipe.preparation else []
-            namespace['preparation'] = preparation
+            namespace['ingredients'] = self.get_ingredient_ns(receipe.ingredient) if receipe.ingredient else []
+            namespace['preparation'] = self.get_preparation_ns(receipe.preparation) if receipe.preparation else []
             file_template = 'receipe_view.html'
         elif action == 'test':
             category = CategoryMod()
@@ -199,8 +197,9 @@ class Receipe(webapp.RequestHandler):
                 selected = 'selected' if x == receipe.price else ''
                 namespace['price'].append({'level': x, 'selected':selected})
             namespace['categories'] = []
+            receipe_category_key = receipe.category.key()
             for category in db.GqlQuery("SELECT * FROM CategoryMod"):
-                selected = 'selected' if category == receipe.category else ''
+                selected = 'selected="selected"' if category.key() == receipe_category_key else ''
                 namespace['categories'].append({'value':category.key() , 'selected':selected, 'title':category.title})
             file_template = 'receipe_edit.html'
         elif action == "receipe_add":
@@ -306,34 +305,17 @@ class Receipe(webapp.RequestHandler):
             self.response.out.write("Action '%s' ou key '%s' incorrecte avec la méthode POST" %(str(action), str(key)))
 
     def get_ingredient_ns(self, xml_ingredient):
-        ns = {}
+        ns  = {'receipes': []}
         dom = parseString(xml_ingredient.encode('utf-8'))
-        node_receipe = dom.getElementsByTagName('receipe')[0]
-        if node_receipe:
-            ingredients = []
-            nodes_ingredient =  node_receipe.getElementsByTagName('ingredient')
-            for node in nodes_ingredient:
-                ingredients.append(node.firstChild.nodeValue)
-            ns['receipe'] = ingredients
-        ns['subreceipes'] = []
-        link_nodes = dom.getElementsByTagName('link')
-#        raise '>>>%s' %link_nodes
-        if link_nodes:
-            links = []
-            url_pattern = 'receipe?action=receipe_view&name=%s'
-            for link_node in link_nodes:
-                url = url_pattern %link_node.getElementsByTagName('receipe_name')[0].firstChild.nodeValue
-                value = link_node.getElementsByTagName('value')[0].firstChild.nodeValue
-                links.append({'url': url, 'value': value}) 
-            ns['links'] = links
-        nodes_subreceipe = dom.getElementsByTagName('subreceipe')
-        if nodes_subreceipe:
-            for node_subreceipe in nodes_subreceipe:
-                ingredients = []
-                name = node_subreceipe.getElementsByTagName('name')[0].firstChild.nodeValue
-                for node_ingredient in node_subreceipe.getElementsByTagName('ing'):
-                    ingredients.append(node_ingredient.firstChild.nodeValue)
-                ns['subreceipes'].append({'name': name, 'ingredients': ingredients})
+        receipe_nodes = dom.getElementsByTagName('rec')
+        for receipe_node in receipe_nodes:
+            ings = []
+            name_node = receipe_node.getElementsByTagName('name')
+            name = name_node[0].firstChild.nodeValue if name_node else ''
+            for ing_node in receipe_node.getElementsByTagName('ing'):
+                ing = encode_href(ing_node.firstChild.nodeValue)
+                ings.append(ing)
+            ns['receipes'].append({'name': name, 'ingredients': ings})
         return ns
 
     def get_preparation_ns(self, xml_preparation):
@@ -341,8 +323,14 @@ class Receipe(webapp.RequestHandler):
         steps = []
         step_nodes = dom.getElementsByTagName('step')
         for step_node in step_nodes:
-            steps.append(step_node.firstChild.nodeValue)
+            step = step_node.firstChild.nodeValue
+            step = encode_href(step)
+            steps.append(step)
         return steps
+
+def encode_href(text):
+    encoded_text = re.sub('\[#href-([^-]+)-([^#]+)#\]', r'<a href="receipe?action=receipe_view&name=\1">\2</a>', text)
+    return encoded_text
 
 application = webapp.WSGIApplication([
     ('/',                  Application  ),
@@ -353,7 +341,7 @@ application = webapp.WSGIApplication([
     debug=True)
 
 def get_menu(self):
-    
+
     menus = [
         {'url': '/',                         'title': 'Accueil'    },
         {'url': 'receipe?category=starter',  'title': 'Entrees'    },
@@ -369,7 +357,7 @@ def get_menu(self):
         ]
 
     # Receipe categories menu
-    #query = db.Query(CategoryMod) 
+    #query = db.Query(CategoryMod)
     #query = query.order('position')
     #categories = query.fetch(limit=100)
     #current_pooling = ''
