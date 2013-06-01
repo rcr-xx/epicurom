@@ -354,6 +354,7 @@ def get_menu(self):
             {'url': 'receipe?category=desert_base',   'title': 'Bases de dessert'  },
             )},
         {'url': 'receipe?category=cocktail', 'title': 'Cocktails'  },
+        {'url': 'receipe?category=dietetique', 'title': 'Diététique'  },
         ]
 
     # Receipe categories menu
